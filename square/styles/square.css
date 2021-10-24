@@ -4,27 +4,51 @@
     height: 150px;
     background: black;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 25px;
+}
+.flexcontainer img {
+    width: 120px;
+    height: 120px;
 }
 .square {
     background: white;
     width: 120px;
     height: 120px;
+    animation-duration: 3s;
+    animation-name: transformation;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes transformation {
+    from {
+        transform: skew(20deg, 0deg)
+    }
+    to {
+        transform: skew(-20deg, 0deg)
+    }
 }
 h1 {
     text-align: center;
 }
 ul {
     color: white;
+    width:80px;
 }
 .ulcontainer {
-    background: black;
+    background-color: black;
     width: 50%;
     height: 100px;
     padding: 10px;
+    border-radius: 25px;
+    transition: width 0.5s, background-color 1s;
+}
+.ulcontainer:hover {
+    width: 98.9%;
     border-radius: 10%;
+    background-color: darkgreen;
 }
 li:hover {
     transform: scale(1.2);
-    margin-left: 10%;
+    margin-left: 12%;
+    color: purple;
 }
