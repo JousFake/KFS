@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+.topblock {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121010;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.links h2 {
+    padding: 10px;
+
+}
+.links a {
+    color: white;
+    text-decoration: none;
+}
+.topblock a {
+    color: white;
+    text-decoration: none;
+}
+.header {
+    background-color: #121010;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+.topblock mainlink {
+    color: white;
+}
+.helloword {
+    padding-top: 15%;
+    align-self: center;
+    color: white;
+    text-align: center;
+}
+.helloword h1 {
+    font-size: 450%;
+    padding-bottom: 20px;
+}
+.helloword p {
+    text-align: center;
+    font-size: 150%;
+    padding-bottom: 40px;
+}
+.helloword button {
+    background-color: transparent;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+.services h1 {
+    text-align: center;
+}
+#topblock {
+}
