@@ -93,7 +93,8 @@ html {
     width: 60px;
     height: 60px;
     border-style: solid;
-    border-color: orangered;
+    border-width: 1px;
+    border-color: gray;
     background-color: orangered;
     border-radius: 50%;
     margin: 100px 10% 0 10%;
@@ -105,6 +106,5 @@ html {
 }
 #second {
     background-color: white;
-    border-color: black;
     color: orangered;
 }
