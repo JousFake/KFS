@@ -1,0 +1,30 @@
+a {
+    color: black;
+}
+div {
+    margin-bottom: 40px;
+}
+#visited:visited {
+    color:red;  
+}
+#link:link {
+    color:green;
+}
+#active:active {
+    color: orange;
+}
+#focus:focus {
+    color:purple;
+}
+.first p {
+    display: inline;
+}
+.first :first-of-type {
+    background-color: lime;
+}
+.first :last-child {
+    background-color: purple;
+}
+.first :first-child {
+    background-color: blue;
+}
