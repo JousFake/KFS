@@ -1,0 +1,125 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	color: dimgray;
+}
+.mainpage {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(background.png) no-repeat;
+	background-size: 100%;
+}
+.left-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: white;
+	margin-top: 5px;
+	height: 99%;
+	width: 30%;
+	border-radius: 20px 0px 0px 20px;
+}
+.left-block h1 {
+	margin-top: 60px;
+	margin-bottom: 100px;
+	font-size: 40px;
+}
+.right-block h1 {
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+.right-block p {
+	margin-bottom: 60px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+.right-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: lightseagreen;
+	width: 30%;
+	height: 99%;
+	margin-top: 5px;
+	border-radius: 0px 20px 20px 0px;
+	color:  white;
+}
+
+.links {
+	display: flex;
+	width: 40%;
+	justify-content: space-between;
+	align-self: center;
+	margin-bottom: 100px;
+}
+.link a {
+	text-decoration: none;
+}
+input {
+	height: 50px;
+	margin-bottom: 20px;
+	background: lightgrey;
+	border-style: unset;
+}
+.left-block p {
+	margin-bottom: 60px;
+}
+textarea {
+	height: 80px;
+	margin-bottom: 30px;
+}
+.left-block button {
+	width: 200px;
+	height: 30px;
+	border-radius: 50px;
+	color: white	;
+	border-style: unset;
+	margin-top: 40px;
+	align-self: center;
+	background: lightseagreen;
+}
+.right-block button {
+	border-radius: 50px;
+	height: 30px;
+	align-self: center;
+	background: lightseagreen;
+	width: 100px;
+	border-color: white;
+}
+.left-block a {
+	color: dimgray;
+}
+.links a {
+	padding: 25px;
+	color: dimgray;
+	font-size: 30px;
+	border-radius: 50px;
+	border-style: solid;
+}
+/*
+.alink {
+	color: black;
+	position: absolute;
+	margin-top: 25%;
+  	font-size: 25px;
+}
+.link {
+	clip-path:  circle(50%);
+	height: 5em;
+	width: 5em;
+	border-style:solid;
+	border-color: gray;
+	position: relative;
+	border-radius: 100px;
+}
+*/
