@@ -10,9 +10,10 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 100vw;
+    width: 99.3vw;
     height: 100vh;
-    background-color: #121010;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/background.jpg) no-repeat;;
+    background-size: cover;
 }
 .links {
     display: flex;
@@ -32,13 +33,13 @@ html {
     text-decoration: none;
 }
 .header {
-    background-color: #121010;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
     color: white;
+    margin-top: 40px;
 }
 .topblock mainlink {
     color: white;
@@ -58,23 +59,27 @@ html {
     font-size: 150%;
     padding-bottom: 40px;
 }
-.helloword button {
+.helloword a {
     background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
     width: 150px;
     height: 40px;
 }
-.services {
+#services {
     height: 40vh;
-    width: 100vw;
+    width: 99.3vw;
 }
-.services h1 {
+#services h1 {
     margin-top: 80px;
     text-align: center;
 }
-#topblock {
-}
-.services hr {
+#services hr {
     background-color: black;
     margin: 40px 49% 40px 48.5%;
     width: 3%;
@@ -84,27 +89,89 @@ html {
     text-align: center;
 }
 .icons {
-    width: 100vw;
+    width: 99.3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    text-align: center;
+    width: 19.5%;
+    margin: 0;
+    margin-left: 40px;
+}
+.content h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
 .icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    position: relative;
     border-style: solid;
     border-width: 1px;
     border-color: gray;
-    background-color: orangered;
     border-radius: 50%;
     margin: 100px 10% 0 10%;
     text-align: center;
-    line-height: 60px;
+    line-height: 80px;
+    font-size: 45px;
 }
 #first {
     color: white;
+    background-color: #bf2f1b;
 }
 #second {
     background-color: white;
-    color: orangered;
+    color: #bf2f1b;
+}
+#third {
+    color: white;
+    background-color: white;
+}
+#help_icon {
+    position: relative;
+    width: 68%;
+    height: 68%;
+    top: 16%;
+    left: 1%;
+    background-image: url(images/support.jpg);
+    /*
+    border-style: solid;
+    border-width: 15px;
+    border-color: orangered;
+    background-color: white;
+    border-radius: 50%;*/
+}
+.fa-twitter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: #bf2f1b;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 99.3vw;
+    background-color: #bf2f1b;
+}
+.foot p {
+    margin-top: 70px;
+    color: white;
 }

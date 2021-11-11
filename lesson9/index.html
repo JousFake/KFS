@@ -3,15 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>New cite</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href=".\styles\style.css">
     </head>
     <body>
-        <div class="topblock">
+        <div class="topblock" id="topblock">
             <div class="header">
                 <h1 class="mainlink"><a href=".\index.html">Startup</a></h1>
                 <div class="links">
                     <h2><a href=".\index.html">Home</a></h2>
-                    <h2><a href=".\index.html">Services</a></h2>
+                    <h2><a href="#services">Services</a></h2>
                     <h2><a href=".\index.html">About</a></h2>
                     <h2><a href=".\index.html">Blog</a></h2>
                     <h2><a href=".\index.html">Credits</a></h2>
@@ -22,18 +23,39 @@
             <div class="helloword">
                 <h1>Welcome to STARTUP</h1>
                 <p>Your Favorite Creative Agency Template</p>
-                <a name="start" href="#topblock">GET STARTED</a>
+                <a href="#topblock">GET STARTED</a>
             </div>
         </div>
-        <div class="services">
+        <div class="services" id="services">
             <h1>SERVICES</h1>
             <hr>
             <p id="description">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
             <div class="icons">
-                <div class="icon" id="first">A</div>
-                <div class="icon" id="second"><label><\></label></div>
-                <div class="icon" id="third">A</div>
+                <div class="content">
+                    <div class="icon" id="first">A</div>
+                    <h3>CLEAN TYPOGRAPHY</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
+                </div>
+                <div class="content">
+                    <div class="icon" id="second"><label><&#47;></label></div>
+                    <h3>ROCK SOLID CODE</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
+                </div>
+                <div class="content">
+                    <div class="icon" id="third"><img id="help_icon" src=".\styles\images\support.jpg"></div>
+                    <h3>EXPERT SUPPORT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
+                </div>
             </div>
+        </div>
+        <div class="foot">
+            <div class="media">
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-twitter"></a>
+                <a href="" class="fab fa-twitter"></a>
+            </div>
+            <p>&copy; 2021 STARTUP, DESIGNED BY JOUS</p>
         </div>
     </body>
 </html>
