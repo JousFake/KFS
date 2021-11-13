@@ -3,31 +3,59 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Document</title>
+		<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
 		<link rel="stylesheet" href=".\styles\style.css">
 	</head>
 	<body>
-		<img src=".\images\image.jpg">
-		<h1>Dmitry Kurapov</h1>
-		<p>This is my <strong>first website ever.</strong></p>
-		<p>I like <em>travelling a lot, writting code and playing football.</em></p>
-		<h2 class="flexname">About me</h2>
-		<div>
-			<ul>
-				<h2>My networks</h2>
-				<li><a href="https://www.instagram.com/jousletsgo/">Instagram</a></li>
-				<li><a href="https://www.facebook.com/dimakurapovi/">Facebook</a></li>
-				<li><a href="https://vk.com/jousgo">Vkontakte</a></li>
-			</ul>
-			<ol>
-				<h2>My hobbies</h2>
-				<li>Tennis</li>
-				<li>Basketball</li>
-				<li>Videogames</li>
-				<li>Coding</li>
-				<li>Walking</li>
-			</ol>
+		<div id="top_block">
+			<div id="links_bar">
+				<a href="#top_block" class="link"><h1>About me</h1></a>
+				<div id="links">
+					<a href="#" class="link"><h2>About me</h2></a>
+					<a href="#" class="link"><h2>Skills</h2></a>
+					<a href="#" class="link"><h2>Portfolio</h2></a>
+				</div>
+			</div>
+			<div id="info_block">
+				<label>Hi. My name is Dima. I'm 19 years old. I'm front-end and back-end web programmer. You can see my works at the Portfolio page.</label>
+			</div>
+			<img src=".\images\image1.jpg">
 		</div>
-		<h2>Contact me</h2>
-		<a href="https://t.me/naynt">Link to telegram</a>
+		<div id="skills_block">
+			<a href="#skills_block"><h1>Skills</h1></a>
+			<div id="skills_info">
+				<div id="back_end" class="skill">
+					<h2>Back-end</h2>
+					<ul>
+						<li>PHP</li>
+						<li>Python</li>
+					</ul>
+				</div>
+				<div id="front_end" class="skill">
+					<h2>Front-end</h2>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+					</ul>
+				</div>
+				<div id="other" class="skill">
+					<h2>Desktop</h2>
+					<ul>
+						<li>C</li>
+						<li>C#</li>
+						<li>C++</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="portfolio">
+			<div id="projects">
+				<ul><li>Startup Model</li></ul>
+				<ul><li>HTML animations</li></ul>
+				<ul><li>Flex</li></ul>
+				<ul><li>Contact page</li></ul>
+				<ul><li>Pseudo-classes</li></ul>
+			</div>
+		</div>
 	</body>
 </html>
