@@ -3,10 +3,18 @@
 	padding: 0;
 }
 #welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: rgb(41,110,1);
+	font-family: "VT323";
+	font-size: 30px;
 	position: relative;
 	background-color: rgb(28, 28, 27);
 	width: 100vw;
 	height: 100vh;
+	text-align: center;
 }
 #textbox {
 	position: absolute;
