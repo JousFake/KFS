@@ -4,7 +4,7 @@
 }
 #welcome {
 	position: relative;
-	background: #1c1c1b;
+	background-color: rgb(28, 28, 27);
 	width: 100vw;
 	height: 100vh;
 }
@@ -12,13 +12,12 @@
 	position: absolute;
 	width: 30%;
 	height: 30%;
-	background-color: white;
 	left: 35%;
 	top: 35%;
-	color: #296e01;
+	color: rgb(41,110,1);
 	font-family: "VT323";
 	font-size: 30px;
-	background-color: #1c1c1b;
+	background-color: rgb(28, 28, 27);
 }
 #first {
 	white-space: nowrap;
@@ -37,7 +36,7 @@
 }
 @keyframes blink_cursor_first {
 	from{
-		border-right-color: #296e01
+		border-right-color: rgb(41,110,1)
 	}
   	to{
   		border-right-color: transparent;
@@ -61,7 +60,7 @@
 }
 @keyframes blink_cursor_second {
 	from{
-		border-right-color: #296e01
+		border-right-color: rgb(41,110,1)
 	}
   	to{
   		border-right-color: transparent;
