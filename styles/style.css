@@ -19,7 +19,7 @@
 	font-size: 30px;
 	background-color: rgb(28, 28, 27);
 }
-#first {
+#t1 {
 	white-space: nowrap;
 	overflow: hidden;
 	animation: writer 3s steps(44) 1s 1 normal both,
@@ -31,7 +31,7 @@
 		width: 0;
 	}
 	100% {
-		width: 100%;
+		width: 720px;
 	}
 }
 @keyframes blink_cursor_first {
@@ -42,7 +42,7 @@
   		border-right-color: transparent;
   	}
 }
-#second {
+#t2 {
 	white-space: nowrap;
 	overflow: hidden;
 	width: 0;
