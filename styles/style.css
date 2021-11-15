@@ -9,7 +9,8 @@
 	flex-direction: column;
 	color: rgb(41,110,1);
 	font-family: "VT323";
-	font-size: 28px;
+	/*font-size: max(1.1vw, 15px);*/
+	font-size: 180%;
 	position: relative;
 	background-color: rgb(28, 28, 27);
 	width: 100vw;
