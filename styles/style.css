@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	-webkit-text-size-adjust: none;
+}
 #welcome {
 	display: flex;
 	justify-content: center;
