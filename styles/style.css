@@ -3,6 +3,9 @@
 	padding: 0;
 }
 #welcome {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: rgb(41,110,1);
 	font-family: "VT323";
 	/*font-size: max(1.1vw, 15px);*/
@@ -11,14 +14,15 @@
 	background-color: rgb(28, 28, 27);
 	width: 100vw;
 	height: 100vh;
-	text-align: center;
 }
-h1 {
-	margin-bottom: 40vh;
+#textbox {
+	max-width: 70vw;
+	background-color: transparent;
 }
 #t1 {
 	color:#0000;
-	max-width: 80vw;
+	width: auto;
+	max-width: 70vw;
   	background:
     	linear-gradient(-90deg,rgb(41,110,1) 2px,#0000 0) 10px 0,
     	linear-gradient(rgb(41,110,1) 0 0) 0 0;
@@ -31,7 +35,7 @@ h1 {
   	animation: 
    		b .7s infinite steps(1),   
    		t 5s steps(var(--n)) forwards,
-   		caret 0.5s steps(2) 4s infinite normal;
+   		caret 0.5s steps(2) 4.2s infinite normal;
 }
 @keyframes caret {
 	from {
