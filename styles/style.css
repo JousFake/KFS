@@ -10,7 +10,7 @@
 	color: rgb(41,110,1);
 	font-family: "VT323";
 	/*font-size: max(1.1vw, 15px);*/
-	font-size: max(2.1vmin,15px);
+	font-size: calc(.6 * (1.5vh + 1.1vw));
 	position: relative;
 	background-color: rgb(28, 28, 27);
 	width: 100vw;
@@ -40,7 +40,7 @@
 		width: 0;
 	}
 	100% {
-		width: max(380px, calc(26*1.1vw));
+		width: max(380px, calc(26*1.1vmax));
 	}
 }
 @keyframes blink_cursor_first {
@@ -64,7 +64,7 @@
 		width: 0;
 	}
 	100% {
-		width: max(190px, calc(11*1.1vw));
+		width: max(190px, calc(11*1.1vmax));
 	}
 }
 @keyframes blink_cursor_second {
