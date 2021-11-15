@@ -36,6 +36,7 @@ body {
   	background-repeat:no-repeat;
   	border-right: solid transparent;
   	border-right-width: 2px;
+  	-webkit-box-decoration-break: clone;
   	animation: 
    		b .7s infinite steps(1),   
    		t 5s steps(var(--n)) forwards,
