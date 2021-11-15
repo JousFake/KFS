@@ -3,10 +3,6 @@
 	padding: 0;
 }
 #welcome {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	color: rgb(41,110,1);
 	font-family: "VT323";
 	/*font-size: max(1.1vw, 15px);*/
@@ -17,17 +13,7 @@
 	height: 100vh;
 	text-align: center;
 }
-#textbox {
-	position: absolute;
-	width: 30%;
-	height: 30%;
-	left: 35%;
-	top: 35%;
-	color: rgb(41,110,1);
-	font-family: "VT323";
-	font-size: 30px;
-	background-color: rgb(28, 28, 27);
-}
+/*
 #t1 {
 	white-space: nowrap;
 	overflow: hidden;
@@ -40,7 +26,7 @@
 		width: 0;
 	}
 	100% {
-		width: max(380px, calc(26*1.1vmax));
+		width: calc(27*1em);
 	}
 }
 @keyframes blink_cursor_first {
@@ -64,7 +50,7 @@
 		width: 0;
 	}
 	100% {
-		width: max(190px, calc(11*1.1vmax));
+		width: calc(11*1em);
 	}
 }
 @keyframes blink_cursor_second {
@@ -75,6 +61,106 @@
   		border-right-color: transparent;
   	}
 }
+
+#text_box {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	top: 45%;
+}
+.text {
+	white-space: nowrap;
+	overflow: hidden;
+	animation: writer 3s steps(59) 1s 1 normal both,
+	blink_cursor_first 0.5s steps(59) 1s 6 normal both;
+	border-right: solid;
+}
+.anim_line {
+	position: absolute;
+	width: 70vw;
+	left: 0%;
+	height: 1em;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	background-color: rgb(28, 28, 27);
+	border-left: solid transparent;
+	border-left-width: 2px;
+}
+#anim_1 {
+	top: 45%;
+	animation: writer_1 5s steps(112) 0s 1 normal both,
+	blink_cursor_1 0.5s steps(112) 0s infinite normal;
+}
+#anim_2 {
+	top: calc(45% + 1em);
+}
+#anim_3 {
+	top: calc(45% + 2em);
+}
+#anim_4 {
+	top: calc(45% + 3em);
+}
+*/
+h1 {
+	margin-bottom: 15vw;
+}
+#t1 {
+	color:#0000;
+	max-width: 80%;
+  	background:
+    	linear-gradient(-90deg,rgb(41,110,1) 2px,#0000 0) 10px 0,
+    	linear-gradient(rgb(41,110,1) 0 0) 0 0;
+  	background-size:calc(var(--n)*1ch) 200%;
+  		-webkit-background-clip:padding-box,text;
+  	background-clip:padding-box,text;
+  	background-repeat:no-repeat;
+  	border-right: solid transparent;
+  	border-right-width: 2px;
+  	animation: 
+   		b .7s infinite steps(1),   
+   		t 5s steps(var(--n)) forwards,
+   		caret 0.5s steps(2) 4s infinite normal;
+}
+@keyframes caret {
+	from {
+		border-right-color: rgb(41,110,1);
+	}
+	to {
+		border-right-color: rgb(28, 28, 27);
+	}
+}
+@keyframes t{
+  from {background-size:0 200%}
+
+}
+@keyframes b{
+  	50% {background-position:0 -100%,0 0}
+}
+
+
+@keyframes writer_1 {
+	0% {
+		margin-left: 0px;
+		width: 100%;
+	}
+	100% {
+		margin-left: 70vw;
+		width: 0%;
+	}
+}
+@keyframes blink_cursor_1 {
+	from{
+		border-left-color: rgb(41,110,1)
+	}
+  	to{
+  		border-left-color: transparent;
+  	}
+}
+
 #arrow_down {
 	position: absolute;
 	top: 95%;
