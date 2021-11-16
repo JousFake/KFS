@@ -3,7 +3,6 @@
 	padding: 0;
 }
 body {
-	overflow: hidden;
 }
 #welcome {
 	display: flex;
@@ -91,6 +90,7 @@ body {
 #info {
 	display: flex;
 	flex-direction: row-reverse;
+	flex-wrap: wrap;
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
