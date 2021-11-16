@@ -89,19 +89,22 @@ body {
 	}
 }
 #info {
-	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(rgb(28, 28, 27), black, rgb(28, 28, 27));
 }
 #info img {
+	justify-self: flex-end;
 	float: right;
 	max-height: 90vh;
 }
 #text_frame {
-	position: absolute;
-	width: 20vw;
-	height: 20vh;
+	justify-self: flex-start;
+	width: 400px;
+	height: 300px;
 	background-color: transparent;
 	border: solid white 2px;
 	top: 35%;
