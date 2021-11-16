@@ -3,7 +3,10 @@
 	padding: 0;
 }
 body {
+	overflow-y: visible;
+	overflow-x: hidden;
 }
+
 #welcome {
 	display: flex;
 	justify-content: center;
@@ -92,6 +95,7 @@ body {
 	flex-direction: row-reverse;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 	width: 100vw;
 	height: 100vh;
 	background: linear-gradient(rgb(28, 28, 27), black, rgb(28, 28, 27));
@@ -99,14 +103,101 @@ body {
 #info img {
 	justify-self: flex-end;
 	float: right;
-	max-height: 90vh;
+	width: 64vmin;
+	height: 64vmin;
+	max-height: 90%;
 }
-#text_frame {
+.text_frame {
 	justify-self: flex-start;
-	width: 400px;
-	height: 300px;
+	min-width: 250px;
+	min-height: 110px;
+	width: 15vmax;
+	height: 14vmin;
+	margin-left: 10vw;
 	background-color: transparent;
 	border: solid white 2px;
 	top: 35%;
 	left: 30%;
+	padding: 10px;
+	border-radius: 10px;
+	font-family: 'EB+Garamond';
+	color: white;
+	font-size: 1vmax;
+	margin-bottom: 1vmin;
+}
+#frame_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#frame_second_floor {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.text_frame h3 {
+	text-align: center;
+}
+#ul_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#label_text {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#contact_info ul {
+	margin-left: 20px;
+}
+#about_me:hover span {
+	display: none;
+}
+#about_me:hover {
+	text-align: center;
+	line-height: 200px;
+}
+#about_me:hover a:before {
+	content: "About me";
+	font-weight: bold;
+	color: white;
+}
+#about_me a {
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#skills_list:hover span {
+	display: none;
+}
+#skills_list:hover a:before {
+	content: "Portfolio";
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#skills_list a {
+	text-decoration: none;
+	line-height: 200px;
+}
+#skills_list:hover {
+	text-align: center;
+}
+#contact_info:hover span {
+	display: none;
+}
+#contact_info:hover a:before {
+	content: "Contact me";
+	color: white;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+#contact_info:hover a {
+	text-decoration: none;
+}
+#contact_info:hover {
+	line-height: 200px;
+	text-align: center;
 }
