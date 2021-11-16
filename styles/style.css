@@ -106,6 +106,8 @@ body {
 	width: 64vmin;
 	height: 64vmin;
 	max-height: 90%;
+	min-height: 10%;
+	min-width: 10%;
 }
 .text_frame {
 	justify-self: flex-start;
@@ -153,7 +155,7 @@ body {
 #contact_info ul {
 	margin-left: 20px;
 }
-#about_me:hover span, #about_me:active {
+#about_me:hover span, #about_me:active, #about_me:focus {
 	display: none;
 }
 #about_me:hover, #about_me:active {
@@ -161,7 +163,7 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-#about_me:hover, #about_me:active a:before {
+#about_me:hover, #about_me:active, #about_me:focus a:before {
 	content: "About me";
 	font-weight: bold;
 	color: white;
