@@ -153,14 +153,15 @@ body {
 #contact_info ul {
 	margin-left: 20px;
 }
-#about_me:hover span {
+#about_me:hover span, #about_me:active {
 	display: none;
 }
-#about_me:hover {
-	text-align: center;
-	line-height: 200px;
+#about_me:hover, #about_me:active {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#about_me:hover a:before {
+#about_me:hover, #about_me:active a:before {
 	content: "About me";
 	font-weight: bold;
 	color: white;
@@ -169,10 +170,10 @@ body {
 	font-size: 1.2em;
 	text-decoration: none;
 }
-#skills_list:hover span {
+#skills_list:hover, #skills_list:active span {
 	display: none;
 }
-#skills_list:hover a:before {
+#skills_list:hover, #skills_list:active a:before {
 	content: "Portfolio";
 	color: white;
 	font-weight: bold;
@@ -180,24 +181,26 @@ body {
 }
 #skills_list a {
 	text-decoration: none;
-	line-height: 200px;
 }
-#skills_list:hover {
-	text-align: center;
+#skills_list:hover, #skills_list:active {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-#contact_info:hover span {
+#contact_info:hover, #contact_info:active span {
 	display: none;
 }
-#contact_info:hover a:before {
+#contact_info:hover, #contact_info:active a:before {
 	content: "Contact me";
 	color: white;
 	font-size: 1.2em;
 	font-weight: bold;
 }
-#contact_info:hover a {
+#contact_info:hover, #contact_info:active a {
 	text-decoration: none;
 }
-#contact_info:hover {
-	line-height: 200px;
-	text-align: center;
+#contact_info:hover, #contact_info:active {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
