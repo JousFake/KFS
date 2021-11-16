@@ -58,7 +58,7 @@
 }
 #arrow {
 	position: absolute;
-	top: 90%;
+	margin-top: 45vw;
 	border: solid white;
   	border-width: 0 3px 3px 0;
   	display: inline-block;
