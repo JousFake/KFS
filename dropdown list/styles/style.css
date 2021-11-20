@@ -1,0 +1,60 @@
+body {
+    background-color: #1c1c1a;
+    margin-bottom: 0;
+}
+header {
+    color: white;
+    background-color: orangered;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    margin-bottom: 0;
+}
+header ul li a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    height: 60px;
+}
+header ul li:hover {
+    background-color: red;
+    cursor: pointer;
+}
+header ul li {
+    height: 60px;
+}
+.dropdown {
+    display: none;
+    visibility: hidden;
+    background-color: orangered;
+    margin-top: 0;
+    padding: 0;
+    width: auto;
+    position: relative;
+}
+.dropdown_next {
+    display: none;
+    visibility: hidden;
+    background-color: orangered;
+    margin-top: 0;
+    padding: 0;
+    height: auto;
+    position: absolute;
+    top: 66%;
+    
+    
+}
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
