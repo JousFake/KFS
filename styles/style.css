@@ -177,8 +177,8 @@ html, body {
 #about_me:hover span {
 	display: none;
 }
-#about_me :active {
-    height: auto;
+#about_me:hover, #about_me :active {
+    display: none;
 }
 #about_me :active:after, 
 #about_me :focus span {
