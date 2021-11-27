@@ -316,7 +316,7 @@ html, body {
   	border-style: none;
 	transform: rotate(-135deg);
   	-webkit-transform: rotate(-135deg);
-  	animation: arrow_up_pick 1.5s 1s infinite;
+  	animation: arrow_up_pick 1.5s 0s infinite;
   	top: 5vh;
   	left: 50vw;
 }
