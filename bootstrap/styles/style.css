@@ -1,10 +1,16 @@
 body {
     padding-top: 20px;
 }
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .card {
     border-radius: 15px;
     margin-bottom: 10px;
     box-shadow: 0px 1px 0px rgba(0,0,0,.125);
+    max-width: 444px;
 }
 .card-img-top {
     /*width: 322px;*/
