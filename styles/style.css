@@ -177,7 +177,8 @@ html, body {
 #about_me:hover span {
 	display: none;
 }
-#about_me.class:active span {
+#about_me.class:active span  {
+    display: none;
     display: none;
 }
 #about_me :active:after, 
