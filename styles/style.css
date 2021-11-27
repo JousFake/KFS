@@ -6,6 +6,10 @@ html, body {
 	position: relative;
 	overflow: hidden;
 }
+html, body {
+	touch-action: none;
+	-ms-touch-action: none;
+}
 #wrapper {
 	position: relative;
 	overflow: hidden;
