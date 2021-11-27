@@ -1,9 +1,7 @@
 body {
     padding-top: 20px;
 }
-.products {
-    display: flex;
-    flex-direction: row;
+.card-group {
     justify-content: center;
 }
 .card {
