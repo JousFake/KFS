@@ -276,7 +276,7 @@ html, body {
 	display: flex;
 	margin-left: 40px;
 	flex-direction: column;
-	width: auto;
+	width: 30%;
 	min-width: 340px;
 	max-width: 30%;
 	max-height: 300px;
