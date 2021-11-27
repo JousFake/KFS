@@ -45,6 +45,8 @@ body {
     border-radius: 20px;
     width: 60px;
     text-align: center;
+    padding: 1px;
+    height: 21px;
 }
 .card-title a {
     text-decoration: underline;
