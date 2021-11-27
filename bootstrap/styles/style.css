@@ -1,14 +1,24 @@
+body {
+    padding-top: 20px;
+}
+.card {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.125);
+}
 .card-img-top {
-    width: 322px;
-    height: 250px;
+    /*width: 322px;*/
+    width: auto;
+    max-height: 250px;
 }
 .text {
     display: block;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
     color:black;
-    height: 70px;
+    height: 75px;
     overflow: hidden;
+    min-height: 75px;
 }
 .card-text :active {
     height: auto;
@@ -21,11 +31,14 @@
     margin-bottom: 10px;
 }
 .card-title {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    font-weight: bolder;
+    font-size: 14px;
 }
 .card-title label {
     background-color: rgba(247, 184, 10,255);
@@ -42,13 +55,55 @@
     width: 100%;
     border-style: unset;
     border-radius: 20px;
+    margin-top: 20px;
 }
 .model {
     position: absolute;
     background-color: purple;
-    width: 50px;
+    width: auto;
     color: white;
     text-align: center;
     top: 0%;
-    left: 72%;
+    right:10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.card-footer {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+small {
+    font-size: 1.4ex;
+    border: rgb(181, 172, 172) solid 1px;
+    background-color: rgb(181, 172, 172);
+    border-radius: 50%;
+    border-width: 1px;
+    border-left-width: 6px;
+    border-right-width: 6px;
+}
+.icon {
+    text-decoration: none;
+    color:white;
+    font-weight: bolder;
+}
+#follow-icon {
+    background-color: white;
+    border: none;
+    color: red;
+}
+.icon:hover {
+    color: white;
+}
+.card-img-top {
+    align-self: center;
+    margin-top: 2em;
+}
+.model:hover {
+    color: white;
 }
