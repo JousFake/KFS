@@ -119,6 +119,7 @@ html, body {
 	flex-wrap: wrap;
 	align-items: center;
 	margin-top: auto;
+	margin-left: 5vw;
 }
 .main img {
 	justify-self: flex-end;
@@ -131,7 +132,7 @@ html, body {
 }
 .text_frame {
 	justify-self: flex-start;
-	min-width: 250px;
+	 
 	min-height: 110px;
 	width: 15vmax;
 	height: 7vmax;
@@ -149,7 +150,6 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left: 5vw;
 }
 #frame_second_floor {
 	display: flex;
@@ -176,6 +176,13 @@ html, body {
 }
 #about_me:hover span {
 	display: none;
+}
+#about_me :active {
+    height: auto;
+}
+#about_me :active:after, 
+#about_me :focus span {
+    display: none;
 }
 #about_me:hover {
 	display: flex;
@@ -432,11 +439,13 @@ form {
 		flex-wrap: nowrap;
 		margin-top: auto;
 		justify-self: center;
+		margin-left: 5vw;
 	}
 	#frame_box {
-		width:  50%;
+		width: 15vmax;
 		flex-direction: column;
 		align-items: center;
+		min-width: 350px;
 	}
 	#frame_second_floor {
 		flex-direction: column;
@@ -450,7 +459,10 @@ form {
 		background-size: 25vh 67vh, cover;
 		align-items: flex-start;
 	}
-	#text_frame {
+	.text_frame {
+		font-size: 1.2vmax;
+		min-width: 350px;
+		min-height: 200px;
 		margin-left: 0px;
 	}
 }
