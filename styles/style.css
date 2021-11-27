@@ -6,7 +6,10 @@ html, body {
 	position: relative;
 	overflow: hidden;
 }
-
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
 #welcome {
 	display: flex;
 	justify-content: center;
