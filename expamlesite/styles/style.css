@@ -1,0 +1,75 @@
+* {
+    font-family: Gilroy-Medium;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:23px;
+}
+.header a {
+    text-decoration: none;
+}
+.home {
+    color:black;
+}
+.link {
+    color: rgba(130, 130, 130, 1);
+}
+.header-devider {
+    margin-top: 31px;
+    width: 67.3%;
+    background-color: rgba(130, 130, 130, 1);
+}
+.header a:active {
+    color: black;
+}
+.header a[tabindex]:focus {
+    color:black;
+}
+.title-container {
+    display: flex;
+    flex-direction: row;
+    font-family: Gilroy-Bold;
+    width: 67.3%;
+    align-items: flex-end;
+    margin-top:40px;
+    margin-left:16%;
+    margin-bottom: 50px;
+}
+.title-container h1 {
+    font-size: 47px;
+    width:122px;
+    margin:0;
+    justify-self: flex-start;
+}
+.about {
+    font-size: 18px;
+    justify-self: center;
+    margin-left: auto;
+}
+.title-container button {
+    background-color: transparent;
+    border: none;
+    transform: rotate(-90deg);
+    font-size: 16px;
+    height:1em;
+    padding: 0;
+    padding-left:25px;
+    padding-top: 50px;
+    justify-self: flex-end;
+    margin-left:auto;
+}
+.title-container button:after {
+    content: "| ENG";
+    font-weight: bold;
+}
+.main-image {
+    width: 67.3%;
+    height: auto;
+    margin-left:16%;
+}
