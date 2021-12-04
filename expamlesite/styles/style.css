@@ -1,3 +1,7 @@
+html,body {
+    padding: 0;
+    margin:0;
+}
 * {
     font-family: Gilroy-Medium;
 }
@@ -72,4 +76,39 @@
     width: 67.3%;
     height: auto;
     margin-left:16%;
+    margin-bottom:100px;
+}
+.about-me {
+    height: 500px;
+    background-color: rgba(246, 246, 246, 1);
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-text {
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:485px;
+    text-align: center;
+    font-size: 18px;
+}
+.about-text h2 {
+    font-size: 34px;
+}
+.skills-title {
+    text-align: center;
+    font-size:34px;
+    margin-top:90px;
+}
+.programs {
+    text-align: center;
+    font-size:18px;
+    margin-top:69px;
+}
+.icons {
+    width:67.3%
 }
