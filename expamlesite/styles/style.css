@@ -649,6 +649,7 @@ html,body {
     .header_menu a {
         text-decoration: none;
         color: rgba(130, 130, 130, 1);
+        visibility: hidden;
     }
     .header_menu a:first-child {
         color: black;
@@ -694,6 +695,9 @@ html,body {
     }
     .close_line {
         margin-top: 26px;
+    }
+    .change-lang {
+        opacity: 0;
     }
 
 }

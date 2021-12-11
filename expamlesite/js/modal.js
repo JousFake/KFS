@@ -10,6 +10,7 @@
     
     var lang=0;
     var link = document.getElementsByClassName('link');
+    var mobile_link = document.getElementsByClassName('link mobile');
     var change_language = document.getElementsByClassName('change-lang');
     var message_btn = document.getElementById('message');
     var message_window = document.getElementById('message_box');
@@ -71,9 +72,53 @@
       if (refs.body.style.getPropertyValue('overflow') == 'hidden')
       {
         refs.body.style.overflow = "auto";
+        for (var i = 0; i < mobile_link.length; i++)
+        {
+          mobile_link[i].style.opacity = 0;
+          mobile_link[i].style.visibility = "hidden";
+        }
+        change_language[1].style.opacity = 0;
       }
       else {
         refs.body.style.overflow = "hidden";
+        let start = Date.now();
+        var element = 0;
+        var opacity = 0;
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+          if(timePassed >= 500)
+          {
+            clearInterval(timer);
+            return;
+          }
+          if (element == 6)
+          {
+            clearInterval(timer);
+            return;
+          }
+          if (element == 5)
+          {
+            change_language[1].style.opacity = opacity;
+            if (opacity >= 1) {
+              opacity = 0;
+              element = 0;
+              clearInterval(timer);
+              return;
+            }
+            opacity= opacity + 0.05;
+          }
+          else {
+            mobile_link[element].style.visibility = "visible";
+            mobile_link[element].style.opacity = opacity;
+            if (opacity >= 1.0) {
+              element++;
+              opacity = 0;
+            }
+            else {
+              opacity = opacity + 0.05;
+            }
+          }
+        }, 1)
       }
     }
     function changeColor() {
@@ -125,6 +170,8 @@
         document.getElementById('skills_link_mobile').innerHTML = "Умения";
         document.getElementById('contacts_link_mobile').innerHTML = "Контакты";
         document.getElementById('portfolio_link_mobile').innerHTML = "Портфолио";
+        document.getElementById('submit').innerHTML = "Отправить";
+        document.getElementById('message_area').placeholder = "Ваше сообщение";
         lang = 1;
       }
       else {
@@ -151,6 +198,8 @@
         document.getElementById('skills_link_mobile').innerHTML = "Skills";
         document.getElementById('contacts_link_mobile').innerHTML = "Contacts";
         document.getElementById('portfolio_link_mobile').innerHTML = "Portfolio";
+        document.getElementById('submit').innerHTML = "Send";
+        document.getElementById('message_area').placeholder = "Your message";
         lang = 0;
       }
     }
