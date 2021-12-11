@@ -577,8 +577,8 @@ html,body {
     }
     .main-image {
         content: url("../images/image.png");
-        width: auto;
-        height: auto;
+        width: 90vw;
+        height: 135vw;
         display: block;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
