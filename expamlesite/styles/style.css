@@ -1,9 +1,17 @@
 html,body {
     padding: 0;
     margin:0;
+    scroll-behavior: smooth;
 }
 * {
+    padding: 0;
+    margin: 0;
     font-family: Gilroy-Medium;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .header {
     display: flex;
@@ -11,8 +19,6 @@ html,body {
     width: 80%;
     justify-content: space-around;
     font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top:23px;
 }
 .header a {
@@ -28,12 +34,21 @@ html,body {
     margin-top: 31px;
     width: 67.3%;
     background-color: rgba(130, 130, 130, 1);
+    margin-left: 0 auto;
 }
 .header a:active {
     color: black;
 }
 .header a[tabindex]:focus {
     color:black;
+}
+.header a:first-child {
+    color: black;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .title-container {
     display: flex;
@@ -42,7 +57,6 @@ html,body {
     width: 67.3%;
     align-items: flex-end;
     margin-top:40px;
-    margin-left:16%;
     margin-bottom: 50px;
 }
 .title-container h1 {
@@ -68,16 +82,22 @@ html,body {
     justify-self: flex-end;
     margin-left:auto;
     text-decoration: none;
-    color: black;
+    color: var(--color);
+    font-weight: var(--font);
 }
 .title-container a:after {
     content: "| ENG";
-    font-weight: bold;
+    color: var(--coloralt);
+    font-weight: var(--fontalt);
+}
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .main-image {
     width: 67.3%;
     height: auto;
-    margin-left:16%;
     margin-bottom:100px;
 }
 .about-me {
@@ -186,11 +206,11 @@ html,body {
     align-content: flex-start;
 }
 .label-figma {
-    margin-top: 24px;
+    margin-top: 34px;
     text-align: center;
     font-size: 17px;
     color: rgba(130, 130, 130, 1);
-    margin-bottom: 72px;
+    margin-bottom: 62px;
 }
 .left-half-circle {
     width: 29px;
@@ -264,6 +284,13 @@ html,body {
     background-color: black;
     font-size: 20px;
     margin-bottom: 52px;
+    transition: all 0.3s;
+}
+.message:hover {
+    width: 160px;
+    height: 35px;
+    font-size: 18px;
+    margin-bottom: 58px;
 }
 .networks {
     width: 100%;
@@ -287,6 +314,14 @@ html,body {
     line-height: 36px;
     font-size: 30px;
 }
+.linkedin_a {
+    color: black;
+    text-decoration: none;
+}
+.instagram_a {
+    color: black;
+    text-decoration: none;
+}
 .instagram_outlined {
     width: 36px;
     height: 36px;
@@ -296,6 +331,7 @@ html,body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .instagram_circle {
     width: 20px;
@@ -314,6 +350,14 @@ html,body {
     left: 30px;
     top: 3px;
 }
+.behance_a {
+    color: black;
+    text-decoration: none;
+}
+.dribble_a {
+    color: black;
+    text-decoration: none;
+}
 .behance {
     color: black;
     font-weight: bolder;
@@ -328,7 +372,7 @@ html,body {
 .footer {
     width: 100%;
 }
-.footer .container {
+.footer_container {
     color: rgba(130, 130, 130, 1);
     font-size: 17px;
     text-align: center;
@@ -341,15 +385,144 @@ html,body {
     width: 100%;
     height: 100%;
     background-color: white;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
-.is_hidden {
+.right-side {
+    margin-top: 17%;
+    height: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.close {
+    width: 56px;
+    height: 56px;
+    position: relative;
+}
+.close_line {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(130, 130, 130, 1);
+    border: none;
+    position: absolute;
+}
+.close:active .close_line {
+    background-color: black;
+}
+.close_line:first-child {
+    transform: rotate(45deg);
+}
+.close_line:last-child {
+    transform: rotate(135deg);
+}
+.change-lang {
+    font-size: 56px;
+    text-decoration: none;
+    color: var(--color);
+    transform: rotate(90deg);
+    font-weight: var(--font);
+    padding-top: 20px;
+}
+.change-lang:after {
+    content: '| ENG';
+    color: var(--coloralt);
+    font-weight: var(--fontalt);
+}
+.message_backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(46, 46, 46, 0.33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message_box {
+    width: 528px;
+    height: 581px;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contact_form {
+    width: 100%;
+    height: 80%;
+}
+.contact_form form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact_form form input {
+    width: 80%;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.contact_form form textarea {
+    width: 80%;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.contact_form form button {
+    width: 80%;
+    height: 41px;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+}
+.close_message {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    align-self: flex-end;
+    margin-right: 10%;
+}
+.close_message:active .message-line {
+    background-color: black;
+}
+.message-line {
+    height: 4px;
+    border: none;
+    background-color: rgba(130, 130, 130, 1);
+    transform: rotate(45deg);
+    position: absolute;
+    width: 100%;
+}
+.message-line:last-child {
+    transform: rotate(135deg);
+}
+.header_menu a:first-child {
+    color: black;
+}
+.is-hidden {
     display: none;
 }
 @media screen and (max-device-width: 415px) {
+    html {
+        scroll-behavior: auto;
+    }
     .header {
         display: none;
     }
@@ -440,6 +613,12 @@ html,body {
         font-size: 24px;
         height: 50px;
     }
+    .message:hover {
+        width: 80%;
+        font-size: 24px;
+        height: 50px;
+        margin-bottom: 52px;
+    }
     .networks .container {
         width: 100%;
         justify-content: space-around;
@@ -447,4 +626,28 @@ html,body {
     .footer .container {
         font-size: 23px;
     }
+    .header_menu {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-around;
+        font-size: 56px;
+        margin-left: 26px;
+        margin-top: 66px;
+        height: 50%;
+    }
+    .header_menu a {
+        text-decoration: none;
+        color: rgba(130, 130, 130, 1);
+    }
+    .header_menu a:first-child {
+        color: black;
+    }
+    .title {
+        width: auto;
+    }
+    .footer_container {
+        font-size: 22px;
+    }
+
 }

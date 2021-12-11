@@ -6,46 +6,47 @@
         <link rel="stylesheet" href="./styles/style.css">
         <title>Design Site</title>
     </head>
-    <body>
+    <body data-body>
         <div class="wrapper">
             <div class="header-container">
-                <div class="menu_container">
-                    <button class="menu_line" data-modal-open></button>
-                    <button class="menu_line" data-modal-open></button>
-                    <button class="menu_line" data-modal-open></button>
+                <div class="menu_container" data-modal-open>
+                    <button class="menu_line"></button>
+                    <button class="menu_line"></button>
+                    <button class="menu_line"></button>
                 </div>
                 <div class="header">
-                    <a href="#1" tabindex="1" class="link">Home</a>
-                    <a href="#2" tabindex="2" class="link">About me</a>
-                    <a href="#3" tabindex="3" class="link">Skills</a>
-                    <a href="#4" tabindex="4" class="link">Portfolio</a>
-                    <a href="#5" tabindex="5" class="link">Contacts</a>
+                    <a href="#home_page" class="link" id="home_link">Home</a>
+                    <a href="#about_page" class="link" id="about_link">About me</a>
+                    <a href="#skills_page" class="link" id="skills_link">Skills</a>
+                    <a href="#portfolio_page" class="link" id="portfolio_link">Portfolio</a>
+                    <a href="#contacts_page" class="link" id="contacts_link">Contacts</a>
                 </div>
                 <hr class="header-devider"> 
             </div>
-            <div class="title-container">
-                <h1>Denis Novik</h1>
-                <div class="about">
-                    <label>UX | UI designer</label><br/>
-                    <label>24 years old, Minsk</label>
+            <div class="title">
+                <div class="title-container">
+                    <h1 id="home">Denis Novik</h1>
+                    <div class="about">
+                        <label id="about_first">UX | UI designer</label><br/>
+                        <label id="about_second">24 years old, Minsk</label>
+                    </div>
+                    <a href="#" class="change-lang">RU </a>
                 </div>
-                <a href="#">RU </a>
             </div>
         </div>
-        <div class="backdrop" data-modal>
-            <button class="close" data-modal-close></button>
+        <div class="image-container">
+            <img src="./styles/images/BSPP2266.png" class="main-image">
         </div>
-        <img src="./styles/images/BSPP2266.png" class="main-image">
-        <div class="about-me">
+        <div class="about-me" id="about">
             <div class="about-text">
-                <h2>About me</h2>
-                <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
-                <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects with wonderful people.</p>
+                <h2 id="about_title">About me</h2>
+                <p id="first_p">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+                <p id="second_p">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                <p id="third_p">Ready to implement excellent projects with wonderful people.</p>
             </div>
         </div>
-        <h2 class="skills-title">Skills</h2>
-        <p class="programs">I work in such programs as</p>
+        <h2 class="skills-title" id="skills-title">Skills</h2>
+        <p class="programs" id="skills">I work in such programs as</p>
         <div class="icons">
             <svg id="stars" style="display: none;" version="1.1">
                 <symbol id="stars-full-star" viewBox="0 0 102 18">
@@ -140,7 +141,7 @@
                     Illustrator
                 </div>
                 <div class="rating">
-                    <svg class="icon">
+                    <svg class="icon" id="skills_mobile">
                         <use xlink:href="#stars-3-0-star">
                     </svg>
                 </div>
@@ -177,27 +178,58 @@
                 </div>
             </div>
         </div>
-        <h2 class="contacts-title">Contacts</h2>
-        <div class="contacts-label">Want to know more or just chat?<br \> You are welcome!</div>
+        <h2 class="contacts-title" id="contacts">Contacts</h2>
+        <div class="contacts-label" id="contacts-label">Want to know more or just chat?<br \> You are welcome!</div>
         <div class="button-container">
-            <button class="message">Send Message</button>
+            <button class="message" id="message">Send Message</button>
         </div>
         <div class="networks">
             <div class="container">
-                <div class="linkedin">in</div>
-                <div class="instagram_outlined">
+                <a href="https://www.linkedin.com" class="linkedin_a"><div class="linkedin">in</div></a>
+                <a href="https://instagram.com" class="instagram_a"><div class="instagram_outlined">
                     <div class="instagram_circle"></div>
                     <div class="instagram_point"></div>
-                </div>
-                <div class="behance">Bē</div>
-                <img src="images/basketball.svg" height="39px" width="39px">
+                </div></a>
+                <a href="https://www.behance.net/" class="behance_a"><div class="behance">Bē</div>
+                <a href="https://dribbble.com/" class="dribble_a"><img src="images/basketball.svg" height="39px" width="39px"></a>
             </div>
         </div>
         <footer class="footer">
-            <div class="container">
+            <div class="footer_container" id="footer_container">
                 Like me on<br />LinkedIn, Instagram, Behance, Dribble
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="header_menu">
+                <a href="#home_page" class="link mobile" id="home_link_mobile">Home</a>
+                <a href="#about_page" class="link mobile" id="about_link_mobile">About me</a>
+                <a href="#skills_page" class="link mobile" id="skills_link_mobile">Skills</a>
+                <a href="#portfolio_page" class="link mobile" id="portfolio_link_mobile">Portfolio</a>
+                <a href="#contacts_page" class="link mobile" id="contacts_link_mobile">Contacts</a>
+            </div>
+            <div class="right-side">
+                <div class="close" data-modal-close>
+                    <div class="close_line"></div>
+                    <div class="close_line"></div>
+                </div>
+                <a class="change-lang" href="#">RU </a>
+            </div>
+        </div>
+            <div class="message_backdrop is-hidden" message-modal>
+                <div class="message_box" id="message_box">
+                    <div class="close_message" message-modal-close>
+                        <div class="message-line" id="msg-close-first"></div>
+                        <div class="message-line" id="msg-close-second"></div>
+                    </div>
+                    <div class="contact_form">
+                        <form action="" method="POST">
+                            <input type="email" name="_replyto" placeholder="Email"><br/>
+                            <textarea name="message" placeholder="Your message"></textarea><br/>
+                            <button type="submit" id="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         <script src="./js/modal.js"></script>
     </body>
 </html>
