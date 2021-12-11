@@ -404,7 +404,7 @@ html,body {
     overflow: hidden;
 }
 .right-side {
-    margin-top: 17%;
+    margin-top: 15%;
     height: 66%;
     display: flex;
     flex-direction: column;
@@ -670,10 +670,14 @@ html,body {
     .message_box .contact_form form input {
         height: 80px;
         margin-bottom: 40px;
+        font-size: 180%;
+        padding: 0 10px 0 29px;
     }
     .message_box .contact_form form textarea {
         height: 400px;
         margin-bottom: 40px;
+        font-size: 180%;
+        padding: 10px 10px 0 29px;
     }
     .message_box .contact_form form button {
         height: 60px;
@@ -684,6 +688,12 @@ html,body {
     .close_message {
         margin-top: 80px;
         margin-bottom: 100px;
+    }
+    .message-line {
+        margin-top: 13px;
+    }
+    .close_line {
+        margin-top: 26px;
     }
 
 }
