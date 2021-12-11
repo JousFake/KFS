@@ -7,23 +7,33 @@
         <title>Design Site</title>
     </head>
     <body>
-        <div class="header-container">
-            <div class="header">
-                <a href="#1" tabindex="1" class="link">Home</a>
-                <a href="#2" tabindex="2" class="link">About me</a>
-                <a href="#3" tabindex="3" class="link">Skills</a>
-                <a href="#4" tabindex="4" class="link">Portfolio</a>
-                <a href="#5" tabindex="5" class="link">Contacts</a>
+        <div class="wrapper">
+            <div class="header-container">
+                <div class="menu_container">
+                    <button class="menu_line" data-modal-open></button>
+                    <button class="menu_line" data-modal-open></button>
+                    <button class="menu_line" data-modal-open></button>
+                </div>
+                <div class="header">
+                    <a href="#1" tabindex="1" class="link">Home</a>
+                    <a href="#2" tabindex="2" class="link">About me</a>
+                    <a href="#3" tabindex="3" class="link">Skills</a>
+                    <a href="#4" tabindex="4" class="link">Portfolio</a>
+                    <a href="#5" tabindex="5" class="link">Contacts</a>
+                </div>
+                <hr class="header-devider"> 
             </div>
-            <hr class="header-devider">
+            <div class="title-container">
+                <h1>Denis Novik</h1>
+                <div class="about">
+                    <label>UX | UI designer</label><br/>
+                    <label>24 years old, Minsk</label>
+                </div>
+                <a href="#">RU </a>
+            </div>
         </div>
-        <div class="title-container">
-            <h1>Denis Novik</h1>
-            <div class="about">
-                <label>UX | UI designer</label><br/>
-                <label>24 years old, Minsk</label>
-            </div>
-            <button>RU </button>
+        <div class="backdrop" data-modal>
+            <button class="close" data-modal-close></button>
         </div>
         <img src="./styles/images/BSPP2266.png" class="main-image">
         <div class="about-me">
@@ -172,6 +182,22 @@
         <div class="button-container">
             <button class="message">Send Message</button>
         </div>
-        <embed src="basketball.svg">
+        <div class="networks">
+            <div class="container">
+                <div class="linkedin">in</div>
+                <div class="instagram_outlined">
+                    <div class="instagram_circle"></div>
+                    <div class="instagram_point"></div>
+                </div>
+                <div class="behance">Bē</div>
+                <img src="images/basketball.svg" height="39px" width="39px">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                Like me on<br />LinkedIn, Instagram, Behance, Dribble
+            </div>
+        </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
