@@ -17,7 +17,7 @@
     var lang=0;
     if (getCookie('lang') == '1')
     {
-      lang = 1;
+      lang = 0;
       changeLanguage();
     }
     else {
