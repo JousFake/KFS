@@ -7,6 +7,13 @@
       message: document.querySelector('[message-modal]'),
       closeModalMsg: document.querySelector('[message-modal-close]')
     };
+    var link = document.getElementsByClassName('link');
+    var mobile_link = document.getElementsByClassName('link mobile');
+    var change_language = document.getElementsByClassName('change-lang');
+    var message_btn = document.getElementById('message');
+    var message_window = document.getElementById('message_box');
+    var send_message = document.getElementById('submit');
+    var clicked = 0;
     var lang=0;
     if (getCookie('lang') == '1')
     {
@@ -16,13 +23,6 @@
     else {
       document.cookie = "lang=0";
     }
-    var link = document.getElementsByClassName('link');
-    var mobile_link = document.getElementsByClassName('link mobile');
-    var change_language = document.getElementsByClassName('change-lang');
-    var message_btn = document.getElementById('message');
-    var message_window = document.getElementById('message_box');
-    var send_message = document.getElementById('submit');
-    var clicked = 0;
 
     for (var i = 0; i < link.length; i++) {
       link[i].addEventListener('click', changeColor);
