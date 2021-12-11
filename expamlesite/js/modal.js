@@ -7,14 +7,22 @@
       message: document.querySelector('[message-modal]'),
       closeModalMsg: document.querySelector('[message-modal-close]')
     };
-    
     var lang=0;
+    if (getCookie('lang') == '1')
+    {
+      lang = 1;
+    }
+    else {
+      alert(document.cookie);
+      document.cookie = "lang=0";
+    }
     var link = document.getElementsByClassName('link');
     var mobile_link = document.getElementsByClassName('link mobile');
     var change_language = document.getElementsByClassName('change-lang');
     var message_btn = document.getElementById('message');
     var message_window = document.getElementById('message_box');
     var send_message = document.getElementById('submit');
+    var clicked = 0;
 
     for (var i = 0; i < link.length; i++) {
       link[i].addEventListener('click', changeColor);
@@ -31,9 +39,20 @@
     refs.openModalBtn.addEventListener('click', toggleModal);
     refs.closeModalBtn.addEventListener('click', toggleModal);
     refs.closeModalMsg.addEventListener('click', toggleMessage);
+    refs.closeModalMsg.addEventListener('mousedown', checkClick);
     message_btn.addEventListener('click', toggleMessage);
+    message_btn.addEventListener('mousedown', checkClick);
     submit.addEventListener('click',toggleMessage);
     message_window.addEventListener('click', function(ev) {
+      ev.stopPropagation();
+    }, false);
+    message_window.addEventListener('mousedown', function(ev) {
+      ev.stopPropagation();
+    }, false);
+    message_window.addEventListener('mouseup', function(ev) {
+      clicked = 0;
+    }, false);
+    refs.closeModalMsg.addEventListener('mouseup', function(ev) {
       ev.stopPropagation();
     }, false);
 
@@ -48,9 +67,22 @@
     document.getElementById('contacts_link_mobile').addEventListener('click', gotoContacts);
 
     refs.message.addEventListener('click', toggleMessage);
-  
+    refs.message.addEventListener('mousedown', checkClick);
+    
+    function getCookie(name) {
+      let matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+      ));
+      return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+    function checkClick() {
+      clicked = 1;
+    }
     function toggleMessage() {
-      refs.message.classList.toggle('is-hidden');
+      if (clicked == 1) {
+        refs.message.classList.toggle('is-hidden');
+        clicked = 0;
+      }
     }
     function gotoAbout() {
       document.getElementById('about').scrollIntoView({block: 'center'})
@@ -173,6 +205,7 @@
         document.getElementById('submit').innerHTML = "Отправить";
         document.getElementById('message_area').placeholder = "Ваше сообщение";
         lang = 1;
+        setCookie('lang','0',1);
       }
       else {
         document.getElementById('home_link').innerHTML = "Home";
@@ -201,6 +234,7 @@
         document.getElementById('submit').innerHTML = "Send";
         document.getElementById('message_area').placeholder = "Your message";
         lang = 0;
+        setCookie('lang','0',1);
       }
     }
   })();

@@ -485,12 +485,14 @@ html,body {
     width: 80%;
     height: 40px;
     border: solid 1px black;
+    padding: 0 10px 0 29px;
     border-radius: 10px;
 }
 .contact_form form textarea {
     width: 80%;
     height: 200px;
     border: solid 1px black;
+    padding: 10px 5px 0 29px;
     border-radius: 10px;
 }
 .contact_form form button {
