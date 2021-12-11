@@ -10,8 +10,8 @@
     var lang=0;
     if (getCookie('lang') == '1')
     {
-      alert('1');
       lang = 1;
+      changeLanguage();
     }
     else {
       document.cookie = "lang=0";
