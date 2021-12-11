@@ -15,14 +15,6 @@
     var send_message = document.getElementById('submit');
     var clicked = 0;
     var lang=0;
-    if (getCookie('lang') == '1')
-    {
-      lang = 0;
-      changeLanguage();
-    }
-    else {
-      document.cookie = "lang=0";
-    }
 
     for (var i = 0; i < link.length; i++) {
       link[i].addEventListener('click', changeColor);
@@ -163,12 +155,6 @@
           toggleModal();
         }
     }
-    function getCookie(name) {
-      let matches = document.cookie.match(new RegExp(
-        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-      ));
-      return matches ? decodeURIComponent(matches[1]) : undefined;
-    }
     function changeLanguage() {
       for (var i = 0; i < change_language.length; i++) {
         if (lang == 0) {
@@ -211,7 +197,6 @@
         document.getElementById('submit').innerHTML = "Отправить";
         document.getElementById('message_area').placeholder = "Ваше сообщение";
         lang = 1;
-        document.cookie = "lang=1";
       }
       else {
         document.getElementById('home_link').innerHTML = "Home";
@@ -240,7 +225,6 @@
         document.getElementById('submit').innerHTML = "Send";
         document.getElementById('message_area').placeholder = "Your message";
         lang = 0;
-        document.cookie = "lang=0";
       }
     }
   })();
