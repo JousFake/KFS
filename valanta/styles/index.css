@@ -1,0 +1,153 @@
+@font-face {font-family: "Suisse Int'l"; src: url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/EOT/SuisseIntl-Regular-WebTrial.eot"); 
+    src: url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/Woff2/SuisseIntl-Regular-WebTrial.woff2") format("woff2"), 
+    url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/WOFF/SuisseIntl-Regular-WebTrial.woff") format("woff"), 
+    url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/TTF/SuisseIntl-Regular-WebTrial.ttf") format("truetype"), 
+    url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/SVG/SuisseIntl-Regular-WebTrial.svg") format("svg"); }
+body,html, * {
+    padding:0;
+    margin:0;
+}
+.wrapper {
+    height:100%;
+    width:100%;
+}
+.header {
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.header .container {
+    width:90%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.devider {
+    width:1px;
+    height:40px;
+    border:none;
+    background-color: rgba(226, 226, 226, 1);
+}
+.exchange {
+    display: flex;
+    flex-direction: column;
+}
+.exchange label {
+    font-family: "Suisse Int'l";
+    font-size: 16px;
+    text-align: center;
+}
+.exchange label:last-child {
+    text-align: center;
+    background-color: rgba(74, 210, 149, 1);
+    color: white;
+    width: 35px;
+    font-weight: bold;
+}
+.rates {
+}
+.networks {
+    color:black;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}
+.networks:last-child {
+    margin-right:0px;
+}
+.mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.phones {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-right:15px;
+}
+.search-button {
+    width:240px;
+    height:55px;
+    display: flex;
+    flex-direction: row;
+}
+.text {
+    height:100%;
+    width: 185px;
+    background-color: rgba(239, 243, 246, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.button {
+    width:55px;
+    height:55px;
+    background-color: rgba(221, 64, 83, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+.search-button:last-child .button {
+    background-color: rgba(74, 210, 149, 1);
+}
+.hr-devider {
+    width:100%;
+    height:1px;
+    background-color: rgba(208, 208, 208, 1);
+}
+.toolbar {
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: center;
+}
+.toolbar .container {
+    width:76%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:100%;
+}
+.menu-item label {
+    font-size: 19px;
+}
+.menu-button {
+    width: 0px;
+    height: 0px;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-top:6px solid rgba(196, 196, 196, 1);
+    margin-left:7px;
+    margin-top:0.2em;
+}
+.banner {
+    width:100%;
+    height:490px;
+}
+.banner .container {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.banner .container .image {
+    width:100%;
+    height:100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
