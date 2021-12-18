@@ -11,7 +11,7 @@ body,html, * {
     height:100%;
     width:100%;
 }
-.header {
+header .header {
     width:100%;
     height:100%;
     display: flex;
@@ -77,7 +77,7 @@ body,html, * {
     display: flex;
     flex-direction: row;
 }
-.text {
+.search-button .text {
     height:100%;
     width: 185px;
     background-color: rgba(239, 243, 246, 1);
@@ -150,4 +150,200 @@ body,html, * {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 14.37%, rgba(0, 0, 0, 0.8) 100%), url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.front-layer {
+    margin-left: 14%;
+    color: white;
+}
+.front-layer .price {
+    font-size: 24px;
+    width: 249px;
+    height: 45px;
+    border: solid 1px white;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 16px;
+}
+.front-layer .text {
+    background-color: transparent;
+    font-size: 45px;
+    width: 700px;
+    margin-bottom: 40px;
+}
+.details-btn {
+    width: 270px;
+    height: 60px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 2px;
+    border-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.banner-info {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(248, 248, 248, 1);
+}
+.banner-info .container {
+    width: 78%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-info .container .text {
+    font-size: 30px;
+    max-width: 18em;
+    margin-bottom: 15px;
+}
+.banner-info .container .under-text {
+    font-size: 18px;
+    color: rgba(119, 119, 119, 1);
+    margin-bottom: 20px;
+}
+.suggestions {
+    width: 270px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: rgba(189, 189, 189, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+.consultation {
+    width: 220px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(150, 150, 150, 1);
+    border-radius: 2px;
+    color: rgba(150, 150, 150, 1);
+    font-size: 16px;
+    font-weight: bold;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    color: rgba(61, 61, 61, 1);
+    font-weight: bold;
+    font-size: 18px;
+}
+.right-side span img {
+    margin-right: 33px;
+    border: 1px dashed rgba(150, 150, 150, 1);
+    border-radius: 50%;
+    padding: 12px;
+}
+.right-side span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hotels {
+    width: 100%;
+    margin-top: 90px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hotels .header {
+    width: 72%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.header label {
+    font-size: 45px;
+    margin-right: 50px;
+    color: rgba(35, 35, 35, 1);
+}
+.button-list {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.button-list .arrow {
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-left: 18px;
+    top: 40%;
+    left: 20%;
+}
+.button-list .arrow-line {
+    width: 25px;
+    height: 1px;
+    border: none;
+    background-color: black;
+    position: absolute;
+    margin-top: 3.9px;
+    top: 40%;
+    left: 20%;
+}
+.btn-prev {
+    transform: rotate(180deg);
+    border-color: rgba(198, 198, 198, 1);
+    margin-right: 20px;
+}
+.btn-next {
+    margin-right: 15%;
+}
+.btn-prev .arrow {
+    border-color: rgba(198, 198, 198, 1);
+}
+.btn-prev .arrow-line {
+    background-color: rgba(198, 198, 198, 1);
+}
+.hotels .header .hr {
+    width: 237px;
+    height: 1px;
+    border: none;
+    background-color: rgba(196, 196, 196, 1);
+}
+.hotels-btn {
+    width: 140px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(150, 150, 150, 1);
+    border-radius: 2px;
+    color: rgba(150, 150, 150, 1);
+    font-size: 14px;
+    font-weight: bold;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+.hotels .container {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+.hotel-card {
+    width: 460px;
+    height: 450px;
+    background: url("../images/hotel-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hotel-card .hotel-img .location {
+    width: auto;
+    height: 30px;
+    min-height: 30px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.35);
 }
