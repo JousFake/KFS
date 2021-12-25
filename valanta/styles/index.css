@@ -1,22 +1,23 @@
-@font-face {font-family: "Suisse Int'l"; src: url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/EOT/SuisseIntl-Regular-WebTrial.eot"); 
-    src: url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/Woff2/SuisseIntl-Regular-WebTrial.woff2") format("woff2"), 
-    url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/WOFF/SuisseIntl-Regular-WebTrial.woff") format("woff"), 
-    url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/TTF/SuisseIntl-Regular-WebTrial.ttf") format("truetype"), 
-    url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/SVG/SuisseIntl-Regular-WebTrial.svg") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@font-face {font-family: "Suisse Int'l";
+    src: url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/TTF/SuisseIntl-Regular-WebTrial.ttf") format("truetype"); }
 body,html, * {
     padding:0;
     margin:0;
+    font-family: 'Montserrat', sans-serif;
 }
 .wrapper {
     height:100%;
     width:100%;
 }
-header .header {
+header {
     width:100%;
     height:100%;
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
 }
 .header .container {
     width:90%;
@@ -25,6 +26,11 @@ header .header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+.header label {
+    font-size: 45px;
+    margin-right: 50px;
+    color: rgba(35, 35, 35, 1);
 }
 .devider {
     width:1px;
@@ -37,18 +43,20 @@ header .header {
     flex-direction: column;
 }
 .exchange label {
-    font-family: "Suisse Int'l";
     font-size: 16px;
     text-align: center;
 }
 .exchange label:last-child {
     text-align: center;
     background-color: rgba(74, 210, 149, 1);
-    color: white;
+    color: rgba(74, 210, 149, 1);
     width: 35px;
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .rates {
+    font-weight: 700;
+    color: rgba(57, 57, 57, 1);
 }
 .networks {
     color:black;
@@ -62,14 +70,20 @@ header .header {
 .mobile {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 .phones {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    margin-right:15px;
+    margin-right:7px;
+    width: auto;
+}
+.phones label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 0px;
 }
 .search-button {
     width:240px;
@@ -85,6 +99,12 @@ header .header {
     justify-content: center;
     align-items: center;
     border: none;
+}
+.search-button .text label {
+    margin-left: 10%;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
 }
 .button {
     width:55px;
@@ -125,6 +145,9 @@ header .header {
 }
 .menu-item label {
     font-size: 19px;
+    font-family: "Suisse Int'l";
+    font-weight: 400;
+    color: rgba(97, 97, 97, 1);
 }
 .menu-button {
     width: 0px;
@@ -216,6 +239,7 @@ header .header {
     color: white;
     font-weight: bold;
     font-size: 16px;
+    margin-right: 30px;
 }
 .consultation {
     width: 220px;
@@ -254,17 +278,26 @@ header .header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 .hotels .header {
     width: 72%;
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    margin-bottom: 52px;
 }
-.header label {
-    font-size: 45px;
-    margin-right: 50px;
-    color: rgba(35, 35, 35, 1);
+.control-leftside {
+    display: flex;
+    flex-direction: row;
+}
+.control-leftside label {
+    white-space: nowrap;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
 }
 .button-list {
     position: relative;
@@ -301,7 +334,6 @@ header .header {
     margin-right: 20px;
 }
 .btn-next {
-    margin-right: 15%;
 }
 .btn-prev .arrow {
     border-color: rgba(198, 198, 198, 1);
@@ -310,7 +342,7 @@ header .header {
     background-color: rgba(198, 198, 198, 1);
 }
 .hotels .header .hr {
-    width: 237px;
+    width: 30%;
     height: 1px;
     border: none;
     background-color: rgba(196, 196, 196, 1);
@@ -325,7 +357,6 @@ header .header {
     font-size: 14px;
     font-weight: bold;
     justify-self: flex-end;
-    margin-left: auto;
 }
 .hotels .container {
     width: 100%;
@@ -336,14 +367,577 @@ header .header {
 .hotel-card {
     width: 460px;
     height: 450px;
-    background: url("../images/hotel-1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
 }
-.hotel-card .hotel-img .location {
+.hotel-card .hotel-img {
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-top: 0;
+    margin-left: 0px;
+}
+.hotel-card .location {
     width: auto;
     height: 30px;
     min-height: 30px;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.hotel-card .rating {
+    margin-top: auto;
+    margin-bottom: 30px;
+}
+.hotel-card .rating .icon {
+    width: 90px;
+    height: 18px;
+}
+.hotel-card .name {
+    margin-bottom: auto;
+    color: white;
+    font-size: 20px;
+}
+.actualtours {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.actualtours .header {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.actualtours .header label {
+    font-size: 45px;
+    color: rgba(35, 35, 35, 1);
+}
+.actualtours .header hr {
+    width: 30%;
+    height: 0;
+}
+.actualtours .header .all-tours-btn {
+    background-color: transparent;
+    width: 140px;
+    height: 45px;
+    color: rgba(150, 150, 150, 1);
+    font-size: 14px;
+    border: 1px solid #969696;
+    border-radius: 2px;
+    font-weight: bold;
+}
+.actualtours .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.tours-cards {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tour-card {
+    width: 327px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tour-card .card-image {
+    width: 100%;
+    height: 250px;
+}
+.tour-card .card-image .fix {
+    margin-bottom: 15px;
+}
+.tour-card .card-image .location {
+    width: auto;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+.tour-card .card-body {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(248, 248, 248, 1);
+    padding-top: 10px;
+}
+.tour-card .card-body .card-name {
+    font-size: 20px;
+    margin-left: 20px;
+}
+.tour-card .card-body .card-general {
+    font-size: 16px;
+    color: rgba(132, 132, 132, 1);
+    margin-top: 29px;
+    margin-left: 20px;
+}
+.tour-card .card-body hr {
+    width: 90%;
+    height: 0px;
+    background-color: rgba(232, 232, 232, 1);
+    margin-left: 5%;
+    margin-top: 26px;
+    margin-bottom: 23px;
+}
+.tour-card .card-body .card-floor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.tour-card .card-body .card-floor .floor-leftside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.tour-card .card-body .card-floor .floor-leftside label {
+    color: rgba(221, 64, 83, 1);
+}
+.tour-card .card-body .card-floor .floor-leftside .text {
+    font-size: 16px;
+}
+.tour-card .card-body .card-floor .floor-leftside .price {
+    font-size: 24px;
+}
+.tour-card .card-body .card-floor .floor-leftside .floor-note label {
+    color: rgba(201, 201, 201, 1);
+    font-size: 12px;
+}
+.tour-card .card-body .card-floor .floor-rightside {
+    font-size: 12px;
+    margin-right: 22px;
+}
+.actualtours .floor {
+    background-color: rgba(248, 248, 248, 1);
+    width: 66%;
+    height: 146px;
+    min-width: 964px;
+    margin-bottom: 93px;
+}
+.actualtours .floor .line {
+    width: 100%;
+    border: none;
+    height: 6px;
+    background-color: rgba(150, 150, 150, 1);
+    margin-bottom: 25px;
+}
+.actualtours .floor .captions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.actualtours .floor .captions .container {
+    display: flex;
+    flex-direction: row;
+    width: 825px;
+}
+.actualtours .floor .captions .container .mark input {
+    height: 50px;
+    width: 99%;
+    border: 1px solid rgba(46, 46, 46, 0.2);
+    border-radius: 2px;
+}
+
+#from {
+    width: 100px;
+}
+#to {
+    width: 215px;
+}
+#date {
+    width: 220px;
+}
+#guests {
+    width: 140px;
+}
+#nights {
+    width: 170px;
+}
+.floor .captions .tour-find {
+    width: 135px;
+    height: 50px;
+    background-color: rgba(221, 64, 83, 1);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 40px;
+}
+.news {
+    width: 100%;
+    height: 620px;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news .header {
+    width: 72%;
+    height: 50px;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 72px;
+}
+.news .header h1 {
+    color: rgba(35, 35, 35, 1);
+    font-size: 45px;
+    font-weight: normal;
+}
+.news .header hr {
+    width: 30%;
+    height: 0px;
+}
+.news .header .all-news {
+    width: 140px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #969696;
+    border-radius: 2px;
+    color: rgba(150, 150, 150, 1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.news .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.news .container .news-cards {
+    width: 72%;
+    display: flex;
+    justify-content: space-around;
+}
+.news .container .news-cards .news-card {
+    width: 238px;
+    height: 383px;
+    background-color: transparent;
+}
+.news .container .news-cards .news-card img {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 15px;
+}
+.news .container .news-cards .news-card .news-date {
+    display: flex;
+    justify-content: flex-start;
+}
+.news .container .news-cards .news-card label {
+    font-size: 20px;
+    color: rgba(50, 50, 50, 1);
+}
+.news .container .news-cards .news-card a {
+    display: block;
+    font-size: 14px;
+    color: rgba(221, 64, 83, 1);
+    margin-top: 25px;
+}
+.news .container .news-cards .news-card .news-date img {
+    width: 16px;
+    height: 16px;
+}
+.news .container .news-cards .news-card .news-date label {
+    margin-left: 9px;
+    color: rgba(187, 187, 187, 1);
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.blog {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.blog .header {
+    width: 72%;
+    height: 50px;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.blog .header h1 {
+    color: rgba(35, 35, 35, 1);
+    font-size: 45px;
+    font-weight: normal;
+}
+.blog .header hr {
+    width: 30%;
+    height: 0px;
+}
+.blog .header .all-articles {
+    width: 140px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #969696;
+    border-radius: 2px;
+    color: rgba(150, 150, 150, 1);
+    font-size: 14px;
+    font-weight: bold;
+}
+.blog .header img {
+    position: absolute;
+    top: -170px;
+    left: 54%;
+    width: 372px;
+    height: 405px;
+    background: transparent;
+}
+.blog .container {
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.blog .container .buttons {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-between;
+}
+.blog .container .articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.blog .container .articles .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 320px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+}
+.blog .container .articles .article .article-content {
+    display: block;
+    width: 270px;
+    height: 305px;
+}
+.blog .container .articles .article .article-content .article-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    margin-top: 18px;
+}
+.blog .container .articles .article .article-content .article-header .article-date {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.blog .container .articles .article .article-content .article-header .article-date img {
+    margin-right: 9px;
+    width: 16px;
+    height: 16px;
+}
+.blog .container .articles .article .article-content .article-header .article-date label {
+    font-size: 14px;
+    color: rgba(187, 187, 187, 1);
+    white-space: nowrap;
+}
+.blog .container .articles .article .article-content .article-header .article-vievers {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.blog .container .articles .article .article-content .article-header .article-vievers img {
+    margin-right: 9px;
+}
+.blog .container .articles .article .article-content .article-header .article-vievers label {
+    font-size: 14px;
+    color: rgba(187, 187, 187, 1);
+}
+.blog .container .articles .article .article-content label {
+    color: rgba(50, 50, 50, 1);
+    font-size: 20px;
+}
+.blog .container .articles .article .article-content .article-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.blog .container .articles .article .article-content .article-footer a {
+    font-size: 14px;
+    color: rgba(221, 64, 83, 1);
+    text-decoration: none;
+    margin-right: 45px;
+    margin-top: 30px;
+}
+.blog .container .articles .article .article-content .article-footer #arrow-container {
+    position: relative;
+    display: block;
+    width: 25px;
+    margin-top: 30px;
+}
+.blog .container .articles .article .article-content .article-footer #arrow-container .arrow-line {
+    position: absolute;
+    width: 25px;
+    height: 1px;
+    background-color: rgba(221, 64, 83, 1);
+    top: 50%;
+}
+.blog .container .articles .article .article-content .article-footer #arrow-container .arrow-topline {
+    position: absolute;
+    width: 4px;
+    height: 1px;
+    background-color: rgba(221, 64, 83, 1);
+    transform: rotate(45deg);
+    left: 80%;
+    top: 40%;
+}
+.blog .container .articles .article .article-content .article-footer #arrow-container .arrow-botline {
+    position: absolute;
+    width: 3px;
+    height: 1px;
+    background-color: rgba(221, 64, 83, 1);
+    transform: rotate(135deg);
+    left: 85%;
+    top: 65%;
+}
+.mailing {
+    width: 100%;
+    height: 255px;
+    background-color: rgba(221, 64, 83, 1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mailing img {
+    position: absolute;
+    width: 406px;
+    height: 406px;
+    top: -100px;
+    left: 70%;
+}
+.mailing .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+.mailing .container .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 34px;
+}
+.mailing .container .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.mailing .container .text h1 {
+    color: white;
+    font-size: 28px;
+}
+.mailing .container .text label {
+    color: white;
+    font-size: 16px;
+}
+.mailing .container .form #email {
+    width: 410px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 30px;
+    color: white;
+}
+.mailing .container .form #email::placeholder {
+    color: white;
+    font-size: 18px;
+}
+.mailing .container .form label {
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+}
+#me {
+    border-color: white;
+    width: 25px;
+    height: 25px;
+    justify-self: space-around;
+}
+#me:after {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgba(221, 64, 83, 1);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+#me:checked:after {
+    content: '✔';
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    color: rgba(221, 64, 83, 1);
+    text-align: center;
+    line-height: 25px;
+    font-size: 24px;
+}
+.mailing .container .form .send {
+    width: 237px;
+    height: 50px;
+    background-color: white;
+    border-radius: 2px;
+    border-width: 0px;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+.tourist {
+    margin-left: auto;
+}
+.agent {
+    margin-left: auto;
 }

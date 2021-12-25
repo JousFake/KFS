@@ -85,7 +85,6 @@
                     </div>
                     <div class="menu-item">
                         <label>Контакты</label>
-                        <div class="menu-button"></div>
                     </div>
                 </div>
             </div>
@@ -127,31 +126,476 @@
         </div>
         <div class="hotels">
             <div class="header">
-                <label>ЛУЧШИЕ ОТЕЛИ</label>
+                <div class="control-leftside">
+                    <label>ЛУЧШИЕ ОТЕЛИ</label>
+                    <div class="buttons">
+                        <div class="button-list btn-prev">
+                            <div class="arrow-line"></div>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="button-list btn-next">
+                            <div class="arrow-line"></div>
+                            <div class="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <button class="hotels-btn">Все отели</button>
+            </div>
+            <svg id="stars" style="display: none;" version="1.1">
+                <symbol id="stars-full-star" viewBox="0 0 102 18">
+                    <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+                </symbol>
+
+
+                <symbol id="stars-all-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-full-star" />
+                    <use xlink:href="#stars-full-star" transform="translate(21)" />
+                    <use xlink:href="#stars-full-star" transform="translate(42)" />
+                    <use xlink:href="#stars-full-star" transform="translate(63)" />
+                    <use xlink:href="#stars-full-star" transform="translate(84)" />
+                </symbol>
+
+
+                <symbol id="stars-0-5-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-0-0-star" />
+                    <use xlink:href="#stars-half-star" />
+                </symbol>
+
+                <symbol id="stars-1-0-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-0-0-star" />
+                    <use xlink:href="#stars-full-star" fill="#e9ba26" />
+                </symbol>
+
+                <symbol id="stars-1-5-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-1-0-star" />
+                    <use xlink:href="#stars-half-star" transform="translate(21)" />
+                </symbol>
+
+                <symbol id="stars-2-0-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-1-0-star" />
+                    <use xlink:href="#stars-full-star" fill="#e9ba26" transform="translate(21)" />
+                </symbol>
+
+                <symbol id="stars-2-5-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-2-0-star" />
+                    <use xlink:href="#stars-half-star" transform="translate(42)" />
+                </symbol>
+
+                <symbol id="stars-3-0-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-2-0-star" />
+                    <use xlink:href="#stars-full-star" fill="#e9ba26" transform="translate(42)" />
+                </symbol>
+
+                <symbol id="stars-3-5-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-3-0-star" />
+                    <use xlink:href="#stars-half-star" transform="translate(63)" />
+                </symbol>
+
+                <symbol id="stars-4-0-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-3-0-star" />
+                    <use xlink:href="#stars-full-star" fill="#e9ba26" transform="translate(63)" />
+                </symbol>
+
+                <symbol id="stars-4-5-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-4-0-star" />
+                    <use xlink:href="#stars-half-star" transform="translate(84)" />
+                </symbol>
+
+                <symbol id="stars-5-0-star" viewBox="0 0 102 18">
+                    <use xlink:href="#stars-all-star" fill="#e9ba26" />
+                </symbol>
+            </svg>
+            <div class="container">
+                <div class="hotel-card" style="background: url(./images/hotel-1.png);">
+                    <div class="hotel-img">
+                        <span class="location">
+                            Портонови, Черногория
+                        </span>
+                    </div>
+                    <div class="rating">
+                        <svg class="icon">
+                            <use xlink:href="#stars-4-0-star">
+                        </svg>
+                    </div>
+                    <div class="name">
+                        One&Only Portonovi
+                    </div>
+                </div>
+                <div class="hotel-card" style="background: url(./images/hotel-2.png);">
+                    <div class="hotel-img">
+                        <span class="location">
+                            Ровінь, п-в Істра
+                        </span>
+                    </div>
+                    <div class="rating">
+                        <svg class="icon">
+                            <use xlink:href="#stars-5-0-star">
+                        </svg>
+                    </div>
+                    <div class="name">
+                        Зимовка в Regent<br />
+                        Porto Montenegro
+                    </div>
+                </div>
+                <div class="hotel-card" style="background: url(./images/hotel-3.png);">
+                    <div class="hotel-img">
+                        <span class="location">
+                            Бока Котор, Черногория
+                        </span>
+                    </div>
+                    <div class="rating">
+                        <svg class="icon">
+                            <use xlink:href="#stars-4-0-star">
+                        </svg>
+                    </div>
+                    <div class="name">
+                        Лечение в Naftalan с<br />
+                        авиа Киев-Загреб-Киев
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actualtours">
+            <div class="header">
+                <label>АКТУАЛЬНЫЕ ТУРЫ</label>
+                <hr>
+                <button class="all-tours-btn">Все туры</button>
+            </div>
+            <div class="container">
                 <div class="button-list btn-prev">
                     <div class="arrow-line"></div>
                     <div class="arrow"></div>
+                </div>
+                <div class="tours-cards">
+                    <div class="tour-card">
+                        <div class="card-image" style="background: url('./images/tour-1.png');">
+                            <div class="fix"></div>
+                            <span class="location">Портонови, Черногория</span>
+                        </div>
+                        <div class="card-body">
+                            <label class="card-name">One&Only Portonovi</label>
+                            <p class ="card-general">первый ультрароскошный курорт<br />One&Only в Европе</p>
+                            <hr>
+                            <div class="card-floor">
+                                <div class="floor-leftside">
+                                    <div class="floor-price">
+                                        <label class="text">от</label>
+                                        <label class="price">818 €</label>
+                                    </div>
+                                    <div class="floor-note">
+                                        <label>за номер в сутки в сезон</label>
+                                    </div>
+                                </div>
+                                <div class="floor-rightside">
+                                    от 3 ночей<br />с 01 мая 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="card-image" style="background: url('./images/tour-2.png');">
+                            <div class="fix"></div>
+                            <span class="location">Ровінь, п-в Істра</span>
+                        </div>
+                        <div class="card-body">
+                            <label class="card-name">Зимовка в Regent<br />Porto Montenegro</label>
+                            <label class ="card-general">це втілення високого стилю, в якому<br />поєднується зручність...</label>
+                            <hr>
+                            <div class="card-floor">
+                                <div class="floor-leftside">
+                                    <div class="floor-price">
+                                        <label class="text">от</label>
+                                        <label class="price">938 €</label>
+                                    </div>
+                                    <div class="floor-note">
+                                        <label>з особи</label>
+                                    </div>
+                                </div>
+                                <div class="floor-rightside">
+                                    от 3 ночей<br />с 01 мая 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="card-image" style="background: url('./images/tour-3.png');">
+                            <div class="fix"></div>
+                            <span class="location">Бока Котор, Черногория</span>
+                        </div>
+                        <div class="card-body">
+                            <label class="card-name">Лечение в Naftalan с<br />авиа Киев-Загреб-Киев</label>
+                            <p class ="card-general">первый бренд, воплотивший<br />оригинальную концепцию пляжных...</p>
+                            <hr>
+                            <div class="card-floor">
+                                <div class="floor-leftside">
+                                    <div class="floor-price">
+                                        <label class="text">от</label>
+                                        <label class="price">175 €</label>
+                                    </div>
+                                    <div class="floor-note">
+                                        <label>за номер в сутки</label>
+                                    </div>
+                                </div>
+                                <div class="floor-rightside">
+                                    от 3 ночей<br />с 01 мая 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="button-list btn-next">
                     <div class="arrow-line"></div>
                     <div class="arrow"></div>
                 </div>
-                <div class="hr"></div>
-                <button class="hotels-btn">Все отели</button>
             </div>
-            <div class="container">
-                <div class="hotel-card">
-                    <div class="hotel-img">
-                        <span class="location">
-                            Портонови, Черногория
-                        </span>
-                        <div class="rating">
-
+            <div class="floor">
+                <div class="line"></div>
+                <div class="captions">
+                    <div class="container">
+                        <div class="mark" id="from">
+                            <div class="caption">
+                                <img src="./images/search/icon-1.png" width="15px" height="15px">
+                                <label>Откуда</label>
+                            </div>
+                            <input type="text" id="from-input"></input>
                         </div>
-                        <div class="name">
-
+                        <div class="mark" id="to">
+                            <div class="caption">
+                                <img src="./images/search/icon-2.png" width="15px" height="15px">
+                                <label>Куда (страна)</label>
+                            </div>
+                            <input type="text" id="to-input"></input>
+                        </div>
+                        <div class="mark" id="date">
+                            <div class="caption">
+                                <img src="./images/search/icon-3.png" width="15px" height="15px">
+                                <label>Дата заезда</label>
+                            </div>
+                            <input type="text" id="date-input"></input>
+                        </div>
+                        <div class="mark" id="guests">
+                            <div class="caption">
+                                <img src="./images/search/icon-4.png" width="15px" height="15px">
+                                <label>Туристы</label>
+                            </div>
+                            <input type="text" id="guests-input"></input>
+                        </div>
+                        <div class="mark" id="nights">
+                            <div class="caption">
+                                <img src="./images/search/icon-5.png" width="15px" height="15px">
+                                <label>Ночей</label>
+                            </div>
+                            <input type="text" id="nights-input"></input>
                         </div>
                     </div>
+                    <button class="tour-find">Найти</button>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="header">
+                <h1>ВАЖНЫЕ НОВОСТИ</h1>
+                <hr>
+                <button class="all-news">Все новости</button>
+            </div>
+            <div class="container">
+                <div class="button-list btn-prev">
+                    <div class="arrow-line"></div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card">
+                        <img src="./images/news/news-1.png">
+                        <div class="news-date">
+                            <img src="./images/news/icon.png">
+                            <label>18 марта, 2021</label>
+                        </div>
+                        <label>Зимовка в Regent Porto Montenegro</label>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="./images/news/news-2.png">
+                        <div class="news-date">
+                            <img src="./images/news/icon.png">
+                            <label>18 марта, 2021</label>
+                        </div>
+                        <label>Зимовка в Regent Porto Montenegro</label>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="./images/news/news-3.png">
+                        <div class="news-date">
+                            <img src="./images/news/icon.png">
+                            <label>18 марта, 2021</label>
+                        </div>
+                        <label>Зимовка в Regent Porto Montenegro</label>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="news-card">
+                        <img src="./images/news/news-4.png">
+                        <div class="news-date">
+                            <img src="./images/news/icon.png">
+                            <label>18 марта, 2021</label>
+                        </div>
+                        <label>Зимовка в Regent Porto Montenegro</label>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="button-list btn-next">
+                    <div class="arrow-line"></div>
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="header">
+                <h1>БЛОГ</h1>
+                <hr>
+                <button class="all-articles">Все статьи</button>
+                <img src="./images/plane.png">
+            </div>
+            <div class="container">
+                <div class="buttons">
+                    <div class="button-list btn-prev">
+                        <div class="arrow-line"></div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="button-list btn-next">
+                        <div class="arrow-line"></div>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="articles">
+                    <div class="article">
+                        <div class="article-content">
+                            <img src="./images/blog/article-1.png">
+                            <div class="article-header">
+                                <div class="article-date">
+                                    <img src="./images/news/icon.png">
+                                    <label>18 марта, 2021</label>
+                                </div>
+                                <div class="article-vievers">
+                                    <img src="./images/blog/icon.png">
+                                    <label>1 358</label>
+                                </div>
+                            </div>
+                            <label>Зимовка в Regent<br />Porto Montenegro</label>
+                            <div class="article-footer">
+                                <a href="#">Подробнее</a>
+                                <a href="#" id="arrow-container">
+                                    <div class="arrow-line">
+                                    </div>
+                                    <div class="arrow-topline">
+                                    </div>
+                                    <div class="arrow-botline">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-content">
+                            <img src="./images/blog/article-2.png">
+                            <div class="article-header">
+                                <div class="article-date">
+                                    <img src="./images/news/icon.png">
+                                    <label>18 марта, 2021</label>
+                                </div>
+                                <div class="article-vievers">
+                                    <img src="./images/blog/icon.png">
+                                    <label>1 358</label>
+                                </div>
+                            </div>
+                            <label>Зимовка в Regent<br />Porto Montenegro</label>
+                            <div class="article-footer">
+                                <a href="#">Подробнее</a>
+                                <a href="#" id="arrow-container">
+                                    <div class="arrow-line">
+                                    </div>
+                                    <div class="arrow-topline">
+                                    </div>
+                                    <div class="arrow-botline">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-content">
+                            <img src="./images/blog/article-3.png">
+                            <div class="article-header">
+                                <div class="article-date">
+                                    <img src="./images/news/icon.png">
+                                    <label>18 марта, 2021</label>
+                                </div>
+                                <div class="article-vievers">
+                                    <img src="./images/blog/icon.png">
+                                    <label>1 358</label>
+                                </div>
+                            </div>
+                            <label>Зимовка в Regent<br />Porto Montenegro</label>
+                            <div class="article-footer">
+                                <a href="#">Подробнее</a>
+                                <a href="#" id="arrow-container">
+                                    <div class="arrow-line">
+                                    </div>
+                                    <div class="arrow-topline">
+                                    </div>
+                                    <div class="arrow-botline">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="article-content">
+                            <img src="./images/blog/article-4.png">
+                            <div class="article-header">
+                                <div class="article-date">
+                                    <img src="./images/news/icon.png">
+                                    <label>18 марта, 2021</label>
+                                </div>
+                                <div class="article-vievers">
+                                    <img src="./images/blog/icon.png">
+                                    <label>1 358</label>
+                                </div>
+                            </div>
+                            <label>Зимовка в Regent<br />Porto Montenegro</label>
+                            <div class="article-footer">
+                                <a href="#">Подробнее</a>
+                                <a href="#" id="arrow-container">
+                                    <div class="arrow-line">
+                                    </div>
+                                    <div class="arrow-topline">
+                                    </div>
+                                    <div class="arrow-botline">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mailing">
+            <img src="./images/mailing.png">
+            <div class="container">
+                <div class="text">
+                    <h1>ПУТЕШЕСТВУЙ С Valanta Travel Company!</h1>
+                    <label>Подписывайтесь на нашу рассылку, чтобы<br />получать самые горячие предложения</label>
+                </div>
+                <div class="form">
+                    <input type="email" id="email" placeholder="Email">
+                    <div class="tourist">
+                        <input type="radio" name="me" id="me">
+                        <label>Я турист</label>
+                    </div>
+                    <div class="agent">
+                        <input type="radio" name="me" id="me">
+                        <label>Я турагент</label>
+                    </div>
+                    <button class="send">Отправить</button>
                 </div>
             </div>
         </div>
