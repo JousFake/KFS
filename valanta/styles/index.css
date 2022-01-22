@@ -1615,3 +1615,121 @@ header {
 .partners .bottom-side .btn-next {
     margin-left: 80px;
 }
+.exclusive {
+    width:100%;
+    height:1159px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.exclusive .exclusive-background {
+    position: absolute;
+    left:0;
+    top: 20%;
+}
+.exclusive .exclusive-background-icon {
+    width:100px;
+    height:100px;
+    background-color: rgba(221, 64, 83, 1);
+    position: absolute;
+    top:28%;
+    left:180px;
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exclusive .exclusive-background-icon label {
+    font-size: 17px;
+    color:white;
+    font-family: "Comforter";
+    transform: rotate(-18.82deg);
+}
+.exclusive .exclusive-background-icon .triangle {
+    position: absolute;
+    width:0;
+    height:0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  
+    border-left: 10px solid rgba(221, 64, 83, 1);
+    top:10%;
+    left:89%;
+    transform: rotate(-30deg);
+}
+.exclusive .container {
+    width: 75%;
+    min-width:372px;
+    height:100%;
+}
+.exclusive .container .header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 77px;
+    flex-wrap: wrap;
+}
+.exclusive .container .header img {
+    width:372px;
+    height:401px;
+    margin-right:52px;
+    z-index: 1;
+}
+.exclusive .container .header .paragraph {
+    margin-top: 48px;
+}
+.exclusive .container .header .paragraph h1 {
+    font-size: 31px;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 35px;
+    max-width: 607px;
+}
+.exclusive .container .header .paragraph p {
+    font-weight: normal;
+    font-size: 20px;
+    color:rgba(101, 101, 101, 1);
+    max-width: 595px;
+}
+.exclusive .container .content .header{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.exclusive .container .content .header h2 {
+    font-size: 20px;
+    color:black;
+    margin-right: 70px;
+}
+.exclusive .container .content .header button {
+    width:180px;
+    height: 45px;
+    border: 1px solid rgba(150, 150, 150, 1);
+    border-radius: 2px;
+    background-color: transparent;
+    color:rgba(150, 150, 150, 1);
+    font-size: 16px;
+}
+@counter-style exclusive-style {
+    suffix: "/";
+}
+.exclusive .container .content .cards ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: exclusive-style;
+    counter-increment: exclusive-marker;
+}
+.exclusive .container .content .cards ol li {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.exclusive .container .content .cards ol li::marker {
+    content:'\\' counter(exclusive-marker);
+    align-self: flex-end;
+    margin-left:auto;
+    margin-right:0;
+}
