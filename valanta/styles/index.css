@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 @font-face {font-family: "Suisse Int'l";
     src: url("../fonts/Suisse-FreeTrial/SuisseIntl-FreeTrial/Web/TTF/SuisseIntl-Regular-WebTrial.ttf") format("truetype"); }
+/*@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');*/
+@font-face {font-family: "Comforter";
+    src: url("../fonts/Comforter-Regular.ttf") format("truetype"); }
 body,html, * {
     padding:0;
     margin:0;
@@ -833,6 +836,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 9px;
 }
 .mailing img {
     position: absolute;
@@ -940,4 +944,674 @@ header {
 }
 .agent {
     margin-left: auto;
+}
+.about-us {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(248, 248, 248, 1);
+}
+.about-us .container {
+    width: 1179px;
+    height: 100%;
+    background-image: url(../images/background-planet.png);
+    background-repeat: no-repeat;
+}
+.about-us .container .header {
+    margin-left: 70px;
+    margin-top: 81px;
+    margin-bottom: 40px;
+}
+.about-us .container .header h1 {
+    font-size: 40px;
+    color: rgba(35, 35, 35, 1);
+}
+.about-us .container .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+.about-us .container .content .about-block {
+    width: 505px;
+    height: 165px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+.about-us .container .content .about-block label {
+    margin-left: 30px;
+    margin-top: 30px;
+    color: rgba(101, 101, 101, 1);
+    font-size: 16px;
+    width: 399px;
+}
+.about-us .container .content .about-block .about-icon {
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(198,198,198);
+}
+.about-us .container .content .about-block .about-icon .about-icon-circle {
+    color: rgb(198,198,198);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(198,198,198);
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+.about-us .container .content .about-block:first-child {
+    border-left-width: 6px;
+    border-left-style: solid;
+    border-left-color: rgba(221, 64, 83, 1);
+}
+.about-us .container .content .about-block:first-child .about-icon {
+    background-color: rgba(221, 64, 83, 1);
+}
+.about-us .container .content .about-block:first-child .about-icon .about-icon-circle {
+    border: 2px solid white;
+    color: white;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+.special-offer {
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/special.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+.special-offer .container {
+    width: 554px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 500px;
+}
+.special-offer img {
+    position: absolute;
+    right: 30%;
+    top: 57px;
+}
+.special-offer .container h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+}
+.special-offer .container label {
+    color: white;
+    font-size: 16px;
+}
+.special-offer .container button {
+    width: 270px;
+    height: 60px;
+    color: rgba(150, 150, 150, 1);
+    background-color: white;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+}
+.our-countries {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.our-countries #countrie-icon-1 {
+    position: absolute;
+    top: -5px;
+    right: 100px;
+}
+.our-countries #countrie-icon-2 {
+    position: absolute;
+    top: 154px;
+    left: -5px;
+}
+.our-countries #countrie-icon-3 {
+    position: absolute;
+    top: 85%;
+    right: 0px;
+}
+.our-countries .content {
+    width: 70%;
+    height: 627px;
+}
+.our-countries .content h2 {
+    font-size: 24px;
+    color: rgba(221, 64, 83, 1);
+    font-weight: bold;
+    font-family: 'Comforter', cursive;
+    margin-top: 110px;
+}
+.our-countries .content .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.our-countries .content .header h1 {
+    color: black;
+    font-size: 36px;
+    width: 50%;
+    font-weight: normal;
+}
+.our-countries .content .header label {
+    align-self: flex-end;
+    margin-top: auto;
+    font-size: 16px;
+    color: rgba(221, 64, 83, 1);
+    width: 180px;
+    text-shadow: 0px 5px 10px gray;
+}
+.our-countries .content .header label bold {
+    font-weight: bold;
+}
+.countries-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+.countries-list .flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.countries-list .flags .countrie {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(248, 248, 248, 1);
+    border: 2px solid rgba(240, 240, 240, 1);
+    box-shadow: 0px 2px 1px rgba(196, 196, 196, 1);
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    position: relative;
+}
+.countries-list .flags .countrie img {
+    margin-top: -45px;
+    margin-left: 15px;
+}
+.countries-list .flags .countrie h1 {
+    font-size: 20px;
+    position: absolute;
+    color: rgba(50, 50, 50, 1);
+    width: auto;
+    display: block;
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-top: -30px;
+    right: 9%;
+}
+.countries-list .flags .countrie .countrie-detail {
+    background-color: rgba(170, 170, 170, 1);
+    color: white;
+    width: 83%;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 2px;
+}
+.countries-list .countries-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.countries-list .countries-info label {
+    width: 30%;
+}
+.countries-list .countries-info .text {
+    display: block;
+    border: 1px solid rgba(101, 101, 101, 1);
+    box-shadow: 0px 5px 10px rgba(101, 101, 101, 1);
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}
+.countries-list .countries-info .text label {
+    width: 100%;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.consierge {
+    width: 100%;
+    height: 991px;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.consierge .container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.consierge .container .left-side {
+    width: 60%;
+}
+.consierge .container .left-side h1 {
+    font-size: 31px;
+    color: black;
+    width: 640px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.consierge .container .left-side hr {
+    width: 640px;
+    margin-bottom: 30px;
+    background-color: rgba(196, 196, 196, 1);
+    border: none;
+    height: 1px;
+}
+.consierge .container .left-side .about-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 640px;
+}
+.consierge .container .left-side .about-text label {
+    font-size: 17px;
+    width: 270px;
+    line-height: 28px;
+}
+.consierge .container .left-side .about-text label:first-child {
+    width: 304px;
+}
+.consierge .container .right-side {
+    width: 40%;
+    position: relative;
+    height: 520px;
+}
+.consierge .container .right-side img {
+    position: absolute;
+    top: 100px;
+    margin-top: 0;
+}
+.consierge .container .right-side img:first-child {
+    top: 0;
+    margin-top: 200px;
+}
+.consierge .container .right-side .circle {
+    width: 129.9px;
+    height: 129.9px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+    background-color: rgba(221, 64, 83, 1);
+    border-radius: 50%;
+    position: absolute;
+    left: 250px;
+    top: 20%;
+}
+.consierge .container .right-side .circle .triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid rgba(221, 64, 83, 1); 
+    transform: rotate(-40deg);
+    margin-top: 25px;
+    margin-left: 7px;
+}
+.consierge .container .right-side .circle label {
+    font-family: 'Comforter', cursive;
+    color: white;
+    font-size: 24px;
+    transform: rotate(-20deg);
+    display: block;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 40px;
+}
+.consierge .footer {
+    width: 100%;
+    height: 471px;
+    background: url(../images/consierge-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.consierge .footer .content {
+    width: 80%;
+    height: 100%;
+}
+.consierge .footer .content h1 {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(50, 50, 50, 1);
+    width: 447px;
+    margin-bottom: 34px;
+}
+.consierge .footer .content h1 bold {
+    font-weight: bold;
+}
+.consierge .footer .content .text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+    height: 85%;
+}
+.consierge .footer .content .text li {
+    color: rgba(37, 37, 37, 1);
+    font-width: 17px;
+    line-height: 26px;
+    font-weight: bold;
+    height: 70px;
+    margin-top: 10px;
+    max-width: 387px;
+    margin-right: 600px;
+    margin-left: 30px;
+    counter-increment: inst;
+    list-style-type: none;
+}
+.consierge .footer .content .text li::before {
+    content: '/0' counter(inst) '. ';
+    color: #969696;
+    font-weight: normal;
+    opacity: 0.5;
+    margin-right: 50px;
+}
+.consierge .footer .content .text li:first-child {
+    border-bottom: 5px solid rgba(221, 64, 83, 1);
+    margin-top: 0px;
+}
+.consierge .footer .content .text li:first-child::before {
+    content: '/ ';
+    content: '/0' counter(inst) '. ';
+    color: #252525;
+    font-weight: normal;
+    opacity: 1;
+}
+.consultation-form {
+    width: 100%;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    background: url(../images/consultation-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.consultation-form .container {
+    width: 72%;
+    height: 80%;
+}
+.consultation-form .container .upper-side {
+    width: 100%;
+    height: 245px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.consultation-form .container .upper-side .left-block {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.consultation-form .container .upper-side .left-block h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+.consultation-form .container .upper-side .left-block label {
+    font-size: 20px;
+    color: white;
+}
+.consultation-form .container .upper-side .right-block {
+    width: 275px;
+    height: 180px;
+    background-color: rgba(255,255,255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consultation-form .container .upper-side .right-block label {
+    font-size: 16px;
+    color: white;
+    margin-left: 30px;
+}
+.consultation-form .container .upper-side .right-block span {
+    font-size: 200px;
+    margin-left: -40px;
+    color: white;
+    font-family: "Suisse-FreeTrial";
+}
+.consultation-form .container .bottom-side {
+    width: 100%;
+}
+.consultation-form .container .bottom-side form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.consultation-form .container .bottom-side form input {
+    background-color: transparent;
+    border: 1px solid rgba(190, 190, 190, 1);
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 270px;
+    height: 50px;
+    /*margin-right: 20px;*/
+    padding-left: 20px;
+    font-size: 16px;
+    color: rgba(196, 196, 196, 1);
+}
+.consultation-form .container .bottom-side form input::placeholder {
+    color: rgba(196, 196, 196, 1);
+    font-size: 16px;
+}
+.consultation-form .container .bottom-side form input:focus {
+    background-color: rgba(25, 28, 32, 1);
+}
+.consultation-form .container .bottom-side form button {
+    background-color: white;
+    width: 170px;
+    height: 50px;
+    color: rgba(150, 150, 150, 1);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+.statistic {
+    width: 100%;
+    height: 1081px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.statistic .statistic-background {
+    position: absolute;
+    /*left: 91%;*/
+    right: 0;
+    top: 40%;
+}
+.statistic .container {
+    height: 840px;
+    width: 80%;
+}
+.statistic .container .upper-side {
+    width: 100%;
+    height: 322px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 62px;
+}
+.statistic .container .upper-side .left-side {
+    display: flex;
+    flex-direction: column;
+}
+.statistic .container .upper-side .left-side h1 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 32px;
+}
+.statistic .container .upper-side .left-side h1:after {
+    content: 'В ЦИФРАХ';
+    color: rgba(221, 64, 83, 1);
+    font-size: 40px;
+}
+.statistic .container .upper-side .left-side .bottom-side {
+    display: flex;
+    justify-content: flex-start;
+}
+.statistic .container .upper-side .left-side .bottom-side label {
+    font-size: 20px;
+    color: rgba(137, 137, 137, 1);
+    max-width: 241px;
+}
+.statistic .container .upper-side .left-side .bottom-side img {
+    width: 43px;
+    height: 92px;
+}
+.statistic .container .upper-side .right-side {
+    width: 683px;
+    height: 322px;
+}
+.statistic .container .bottom-side {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.statistic .container .bottom-side .card {
+    height: 185px;
+    /*margin-right: 15%;*/
+    flex: 1 0 33%
+}
+.statistic .container .bottom-side .card h1 {
+    font-size: 60px;
+    color: black;
+    margin-bottom: 25px;
+}
+.statistic .container .bottom-side .card hr {
+    width: 300px;
+    height: 0px;
+    border: 1px solid rgba(101, 101, 101, 1);
+    margin-bottom: 20px;
+}
+.statistic .container .bottom-side .card label {
+    font-size: 17px;
+    color: rgba(101, 101, 101, 1);
+    width: 300px;
+    display: block;
+}
+.partners {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 248, 248, 1);
+    position: relative;
+}
+.partners .partner-background-frame {
+    position: absolute;
+    left: 0;
+    top: -100px;
+}
+.partners .container {
+    width: 73%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.partners .container .upper-side {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 89px;
+}
+.partners .container .upper-side .left-side {
+    width: 381px;
+    height: 100%;
+}
+.partners .container .upper-side .left-side label {
+    font-size: 40px;
+    color: black;
+    max-width: 381px;
+    font-weight: bold;
+}
+.partners .container .upper-side .right-side label{
+    font-size: 20px;
+    color: rgba(101, 101, 101, 1);
+    margin-bottom: 30px;
+    max-width: 520px;
+    font-weight: normal;
+}
+.partners .container .upper-side .right-side label:last-child {
+    margin-bottom: 0px;
+}
+.partners .bottom-side {
+    width: 100%;
+    height: 356px;
+    background: linear-gradient(0deg, transparent, 5%, #F8F8F8), url(../images/partners/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners .bottom-side .partners-list {
+    height: 175px;
+    width: 1040px;
+    display: flex;
+    justify-content: flex-start;
+}
+.partners .bottom-side .partners-list .partner-card {
+    width: 175px;
+    height: 175px;
+    border-left: 1px solid rgba(196, 196, 196, 0.5);
+    border-right: 1px solid rgba(196, 196, 196, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.partners .bottom-side .partners-list .partner-card:first-child {
+    border-left: none;
+    border-top: 6px solid rgba(221, 64, 83, 1);
+    height: 169px;
+}
+.partners .bottom-side .partners-list .partner-card:last-child {
+    border-right: none;
+}
+.partners .bottom-side .btn-prev {
+    margin-right: 80px;
+}
+.partners .bottom-side .btn-next {
+    margin-left: 80px;
 }
